@@ -305,9 +305,6 @@ input[type]:checked ~ span.mid {
         display: none;
     }
     
-    .main-header .container{
-        /* background-color: #103a3fc7; */
-    }
 }
 @media screen and (min-width:768px){
     .m-nav{
