@@ -29,11 +29,12 @@
         <div class="nav">
           <ul class="d-nav">
             <li><a class="d-links" id="link1">الرئيسية</a></li>
-            <li><a class="d-links" id="link2">الفروع</a></li>
-            <li><a class="d-links" id="link3">الحلقات</a></li>
-            <li><a class="d-links" id="link4">المنتجات</a></li>
-            <li><a class="d-links" id="link5">الوظائف</a></li>
-            <li><a class="d-links" id="link6">تواصل معنا</a></li>
+            <li><a class="d-links" id="link2">أنشطتنا</a></li>
+            <li><a class="d-links" id="link3">حلقاتنا</a></li>
+            <li><a class="d-links" id="link4">الروضة</a></li>
+            <!-- <li><a class="d-links" id="link5">عن بعد</a></li> -->
+            <li><a class="d-links" id="link6">المسابقة السنوية</a></li>
+            <li><a class="d-links" id="link6">وظائف</a></li>
           </ul>
           <label for="check" class="menuButton">
             <input id="check" class="toogle" type="checkbox" />
@@ -44,16 +45,40 @@
         </div>
 
         <ul class="m-nav">
-          <li class="m-lin"><a class="m-links" href="">الرئيسية</a></li>
-          <li class="m-lin"><a class="m-links" href="">الفروع</a></li>
-          <li class="m-lin"><a class="m-links" href="">الحلقات</a></li>
-          <li class="m-lin"><a class="m-links" href="">المنتجات</a></li>
-          <li class="m-lin"><a class="m-links" href="">الوظائف</a></li>
-          <li class="m-lin"><a class="m-links" href="">تواصل معنا</a></li>
+          <div class="m-nav-container">
+            <li class="m-lin"><a class="m-links" href="">الرئيسية</a></li>
+            <li class="m-lin"><a class="m-links" href="">أنشطتنا</a></li>
+            <li class="m-lin"><a class="m-links" href="">حلقاتنا</a></li>
+            <li class="m-lin"><a class="m-links" href="">الروضة</a></li>
+            <li class="m-lin"><a class="m-links" href="">عن بعد</a></li>
+            <li class="m-lin">
+              <a class="m-links" href="">المسابقة السنوية</a>
+            </li>
+            <li class="m-lin"><a class="m-links" href="">وظائف</a></li>
+          </div>
         </ul>
       </div>
     </header>
+    <div class="landing-container">
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/land.jpeg" alt="" />
+      </div>
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/land2.jpeg" alt="" />
+      </div>
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/land3.jpeg" alt="" />
+      </div>
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="nextSlide()">&#10095;</a>
 
+      <div class="dots-container">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
     <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

@@ -74,19 +74,7 @@ document.body.addEventListener("click", function (event) {
     tog.checked = false;
   }
 });
-// active link //
-// const link_a = document.querySelectorAll(".d-links");
 
-// function activeLink() {
-//   link_a.forEach(function (item) {
-//     item.classList.remove("d-links-active");
-//   });
-//   this.classList.add("d-links-active");
-// }
-
-// link_a.forEach(function (item) {
-//   item.addEventListener("click", activeLink);
-// });
 /////////////////////////////////////////////////////
 const link_a = document.querySelectorAll(".d-links");
 
