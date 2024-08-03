@@ -25,6 +25,7 @@ function currentSlide(n) {
   resetTimer(); // Reset the timer
 }
 
+/////////////////////////////////////////////////////////////
 // Display slides based on the current index
 function showSlides() {
   let slides = document.querySelectorAll(".mySlides"); // Get all slides
@@ -51,6 +52,7 @@ function showSlides() {
   // Highlight the current dot
   dots[slideIndex].classList.add("active");
 }
+/////////////////////////////////////////////////////////////
 
 // Timer settings
 let timer = 7; // Timer duration in seconds

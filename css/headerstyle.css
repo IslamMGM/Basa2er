@@ -305,6 +305,7 @@ input[type]:checked ~ span.mid {
         display: none;
     }
     
+
 }
 @media screen and (min-width:768px){
     .m-nav{
@@ -391,11 +392,12 @@ input[type]:checked ~ span.mid {
     transition:0.3s ease;
 }
 
-.active{
-    background-color: #add8e6cc;
-}
+
 .dots:hover {
   background-color: #add8e6cc;
+}
+.active{
+    background-color: #add8e6cc !important;
 }
 
 
