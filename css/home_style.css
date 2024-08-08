@@ -747,7 +747,7 @@ input[type]:checked ~ span.mid {
     z-index: 0;
     display: block;
     height: 30px;
-    background-size: 30px 100%;
+    background-size: 50px 100%;
     background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
     background-position: 0 0;
     overflow: hidden;
