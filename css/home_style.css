@@ -733,7 +733,7 @@ input[type]:checked ~ span.mid {
 .statistics{
     position: relative;
     background: #F4F6FA;
-    padding: 40px 0;
+    padding: 50px 0;
     margin-bottom: 140px;
     direction: rtl;
 }
@@ -742,13 +742,27 @@ input[type]:checked ~ span.mid {
     content: "";
     position: absolute;
     right: 0;
-    left: -0.1%;
+    left: -1%;
     top: 0;
     z-index: 0;
     display: block;
     height: 30px;
-    background-size: 50px 100%;
+    background-size: 35px 100%;
     background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+    background-position: 0 0;
+    overflow: hidden;
+}
+.statistics::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -1%;
+    bottom: 0;
+    z-index: 0;
+    display: block;
+    height: 30px;
+    background-size: 35px 100%;
+    background-image: linear-gradient(313deg, white 25%, transparent 25%), linear-gradient(44deg, white 25%, transparent 25%);
     background-position: 0 0;
     overflow: hidden;
 }
@@ -811,4 +825,176 @@ input[type]:checked ~ span.mid {
     }
     .statistics{
     } */
+}
+/* end statistics section */
+
+/* start branches section */
+.branches-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 140px;
+    direction: rtl;
+}
+
+.branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border: 1px solid #669bcc3a;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px 10px #f2f2f2d8,
+     0px 0px 8px 8px #ffffff;
+     overflow: hidden;
+}
+
+.man-img-holder,
+.women-img-holder,
+.kid-img-holder{
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.man-img-holder::before{
+    position: absolute;
+    content: "";
+    width: 117%;
+    height: 100%;
+    background-color: #616cb53d;
+}
+.women-img-holder::before{
+    position: absolute;
+    content: "";
+    width: 117%;
+    height: 100%;
+    background-color: #f783ac3d;
+}
+.kid-img-holder::before{
+    position: absolute;
+    content: "";
+    width: 117%;
+    height: 100%;
+    background-color: #69db7c3d;
+}
+
+
+.img-holder::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: -30px;
+    border-style: solid;
+    border-width: 0px 0px 120px 500px;
+    border-color: #ff000000 #ff000000 #ffffff #ff000000;
+    transition-duration: 0.3s;
+}
+
+.branch:hover .img-holder::after{
+    border-width: 120px 500px 120px 0px;
+}
+
+.branch-img{
+    height: 330px;
+    width: 117%;
+}
+
+.men-str,
+.women-str,
+.kid-str{
+    position: relative;
+    margin-bottom: 45px;
+    font-size: 25px;
+    color: #475057;
+}
+
+.men-str::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 80%;
+    background-color: #616cb5;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.women-str::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 80%;
+    background-color: #f783ac;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.kid-str::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 80%;
+    background-color: #69db7c;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.branch-text{
+    margin-bottom: 40px;
+    line-height: 2;
+    font-weight: 400;
+    color: #616c74;
+    text-align: center;
+}
+
+.men-more-det,
+.women-more-det,
+.kid-more-det{
+    margin-bottom: 50px;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.men-more-det{
+    border: 3px solid #616cb5;
+    color: #616cb5;
+    position: relative;
+    background: linear-gradient(to right, #616cb5 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.women-more-det{
+    border: 3px solid #f783ac;
+    color: #f783ac;
+    position: relative;
+    background: linear-gradient(to right, #f783ac 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.kid-more-det{
+    border: 3px solid #69db7c;
+    color: #69db7c;
+    position: relative;
+    background: linear-gradient(to right, #69db7c 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.branch:hover .men-more-det{
+    background-position: left bottom;
+    color: white;
+}
+.branch:hover .women-more-det{
+    background-position: left bottom;
+    color: white;
+}
+.branch:hover .kid-more-det{
+    background-position: left bottom;
+    color: white;
 }
