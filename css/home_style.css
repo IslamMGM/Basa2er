@@ -342,7 +342,7 @@ input[type]:checked ~ span.mid {
     color: #ffffff;
     font-size: 30px;
     padding: 20px;
-    background: #add8e61a;
+    background: #add8e611;
     user-select: none;
     overflow: hidden;
     transition: 0.3s ease-in-out;
@@ -350,21 +350,19 @@ input[type]:checked ~ span.mid {
 }
 
 .prev:hover{
-    background: #add8e64b;
+    background: #add8e625;
 
 }
 .next:hover{
-    background: #add8e64b;
+    background: #add8e625;
 }
 
 .prev{
-    left: 0;
-    border-radius: 0 5px 5px 0;
+     border-radius: 0 5px 5px 0;
     left: -60px;
 }
 .next{
-    right: 0;
-    border-radius: 5px 0 0 5px;
+     border-radius: 5px 0 0 5px;
     right: -60px;
  
 }
@@ -374,6 +372,17 @@ input[type]:checked ~ span.mid {
 }
 .landing-container:hover .next{
      right: 0px;
+}
+@media screen and (max-width:767px){
+    .prev{
+        left: 0;
+ 
+    }
+    .next{
+        right: 0;
+ 
+    }
+    
 }
 
 .dots-container{
