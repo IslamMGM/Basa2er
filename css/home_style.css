@@ -463,6 +463,14 @@ input[type]:checked ~ span.mid {
     box-shadow: 0 1px 15px #00000011;
     border-radius: 10px;
 }
+@media (max-width: 400px){
+    .vision,
+    .msg,
+    .value,
+    .aims{
+        padding: 20px 10px;
+      }
+}
 
 .info-svg{
     height: 45px;
@@ -843,6 +851,12 @@ input[type]:checked ~ span.mid {
     }
 }
 
+@media (max-width: 400px){
+    .branches-container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
 .branch{
     display: flex;
     flex-direction: column;
@@ -1022,6 +1036,12 @@ input[type]:checked ~ span.mid {
     padding: 80px 0;
 
 }
+@media (max-width: 400px){
+    .address-container{
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+}
+
 
 .brnch-det{
     display: flex;
@@ -1031,7 +1051,7 @@ input[type]:checked ~ span.mid {
 }
 
 
-.brnch-det h3{
+.branch-head{
     font-weight: 800;
     font-size: 17px;
     margin-bottom: 15px;
@@ -1051,18 +1071,6 @@ input[type]:checked ~ span.mid {
     color: #d4d4d4;
 }
 
-@media screen and (max-width: 767px){ 
-    .map,
-    .time,
-    .tel{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-}
-
 .brnch-icon{
     font-size: 28px;
     margin-top: 5px;
@@ -1079,8 +1087,23 @@ input[type]:checked ~ span.mid {
     margin-right: 10px;
     flex: 1;
 }
-
-
+@media screen and (max-width: 606px){ 
+    .map,
+    .time,
+    .tel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .brnch-det .info{
+        text-align: center;
+    }
+    .brnch-icon{
+         margin-bottom: 13px;
+     }
+}
 
 /* ////// start foter-2 /////////// */
 .footer-2 {
@@ -1215,7 +1238,7 @@ input[type]:checked ~ span.mid {
 
 @media (max-width: 400px){
     .footer-2 .container {
-        grid-template-columns: repeat(auto-fill, minmax(230px , 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
       }
 
     .footer-links li a{
@@ -1237,7 +1260,15 @@ input[type]:checked ~ span.mid {
     color: #b9b9b9;
     margin-bottom: 20px;
 }
-
+.branch-main-head{
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: white;
+    padding: 20px 15px;
+    background-color: #4444444f;
+    border-radius: 5px;
+}
 
 .sec1 .line i{
     font-size: 30px;
