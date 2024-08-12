@@ -317,4 +317,9 @@ input[type]:checked ~ span.mid {
         width: 0;
     }
 }
+
+/* ////////////// */
+.comp-header{
+    background-color: #313131;
+}
 /* /////// end header ////// */
