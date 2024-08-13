@@ -76,29 +76,29 @@ document.body.addEventListener("click", function (event) {
 });
 
 /////////////////////////////////////////////////////
-const link_a = document.querySelectorAll(".d-links");
+// const link_a = document.querySelectorAll(".d-links");
 
-function activeLink() {
-  link_a.forEach(function (item) {
-    item.classList.remove("d-links-active");
-  });
-  this.classList.add("d-links-active");
+// function activeLink() {
+//   link_a.forEach(function (item) {
+//     item.classList.remove("d-links-active");
+//   });
+//   this.classList.add("d-links-active");
 
-  // Store the active link's ID in localStorage
-  localStorage.setItem("activeLink", this.id);
-}
+//   // Store the active link's ID in localStorage
+//   localStorage.setItem("activeLink", this.id);
+// }
 
-link_a.forEach(function (item) {
-  item.addEventListener("click", activeLink);
-});
+// link_a.forEach(function (item) {
+//   item.addEventListener("click", activeLink);
+// });
 
-// On page load, check localStorage and apply the active class to the stored link
-window.addEventListener("DOMContentLoaded", (event) => {
-  const activeLinkId = localStorage.getItem("activeLink");
-  if (activeLinkId) {
-    const activeLinkElement = document.getElementById(activeLinkId);
-    if (activeLinkElement) {
-      activeLinkElement.classList.add("d-links-active");
-    }
-  }
-});
+// // On page load, check localStorage and apply the active class to the stored link
+// window.addEventListener("DOMContentLoaded", (event) => {
+//   const activeLinkId = localStorage.getItem("activeLink");
+//   if (activeLinkId) {
+//     const activeLinkElement = document.getElementById(activeLinkId);
+//     if (activeLinkElement) {
+//       activeLinkElement.classList.add("d-links-active");
+//     }
+//   }
+// });
