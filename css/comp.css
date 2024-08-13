@@ -12,6 +12,22 @@
 .form-container{
     margin: 30px 50px 10px 50px;
     box-shadow: 0px 0px 20px 20px #ceb1e94e;
-    padding: 10px;
     position: relative;
+    overflow: hidden;
+
+}
+
+@media screen and (max-width: 767px) {
+    .form-frame{
+        height: 100vh;
+      }
+    
+    .form-container{
+        margin: 0;
+    
+    }
+}
+
+.comp-reg-img{
+    width: 100%;
 }
