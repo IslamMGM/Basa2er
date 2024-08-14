@@ -6,11 +6,11 @@
     position: relative;
     border: none;
     width: 100%;;
-    height: 72vh;
+    height: 90vh;
   }
 
 .form-container{
-    box-shadow: 0px 0px 20px 20px #ceb1e94e;
+    box-shadow: 0px 0px 30px 15px #44444438;
     position: relative;
     overflow: hidden;
     display: block;
@@ -25,10 +25,64 @@
     
     .form-container{
         width: 100%;
-        margin:0;
+        margin-top: -4px;
     }
 }
 
+
 .comp-reg-img{
     width: 100%;
+    height: 422px;
+}
+.form-head{
+    position: absolute;
+    height: 110px;
+    background-color: #444;
+    top: 0px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.form-label{
+    position: absolute;
+    top: 45px;
+    left: 38px;
+    color: white;
+    background-color: #4f4f4f;
+    padding: 12px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.submit{
+    position: absolute;
+    bottom: 17.9px;
+    left: 49.6%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 2px;
+    padding: 4px 19px;
+    background-color: #444;
+    color: white;
+    pointer-events: none; /* Allow clicks to pass through */
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1620px){
+    .submit{
+          left: 49.4%;
+    }
+}
+@media screen and (max-width:767px){
+    .submit{
+          left: 49.2%;
+    }
+}
+
+.submit:hover{
+    background-color: #c29c9c;
+
 }
