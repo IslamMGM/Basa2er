@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animate on scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- ------------------ -->
+    <!-- Linking SwiperJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- -------------------- -->
+    <link rel="stylesheet" href="css/hesder.css" />
+    <link rel="stylesheet" href="css/competition.css" />
+    <title>المسابقة السنوية</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo-container">
+          <img id="logo" class="logo" src="img/logo.png" alt="" />
+          <label class="logo-label" for="logo">بصائر</label>
+        </div>
+        <div class="nav">
+          <ul class="d-nav">
+            <li>
+              <a class="d-links" id="link1" href="index.html">الرئيسية</a>
+            </li>
+            <li><a class="d-links" id="link2">أنشطتنا</a></li>
+            <li><a class="d-links" id="link3">حلقاتنا</a></li>
+            <li><a class="d-links" id="link4">الروضة</a></li>
+            <li>
+              <a class="d-links" id="link6" href="competition.html"
+                >المسابقة السنوية</a
+              >
+            </li>
+            <li>
+              <a class="d-links" id="link6">وظائف</a>
+            </li>
+          </ul>
+          <label for="check" class="menuButton">
+            <input id="check" class="toogle" type="checkbox" />
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bot"></span>
+          </label>
+        </div>
+        <ul class="m-nav">
+          <div class="m-nav-container">
+            <li class="m-lin">
+              <a class="m-links" href="index.html">الرئيسية</a>
+            </li>
+            <li class="m-lin"><a class="m-links" href="">أنشطتنا</a></li>
+            <li class="m-lin"><a class="m-links" href="">حلقاتنا</a></li>
+            <li class="m-lin"><a class="m-links" href="">الروضة</a></li>
+            <li class="m-lin"><a class="m-links" href="">عن بعد</a></li>
+            <li class="m-lin">
+              <a class="m-links" href="comp.html">المسابقة السنوية</a>
+            </li>
+            <li class="m-lin"><a class="m-links" href="">وظائف</a></li>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing section -->
+    <div class="landing-container">
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/comp-1.jpg" alt="" />
+      </div>
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/comp-2.jpg" alt="" />
+        <!-- <h4>أضغط للمزيد</h4> -->
+      </div>
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="nextSlide()">&#10095;</a>
+
+      <div class="dots-container">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <!-- <span class="dots" onclick="currentSlide(3)"></span> -->
+      </div>
+    </div>
+    <!-- end landing section -->
+    <!-- start comp defination -->
+    <div class="comp-def">
+      <div class="container">
+        <div class="comp-def-box">
+          <div class="comp-def-info">
+            <div class="comp-def-head-box">
+              <i class="fa-solid fa-triangle-exclamation def-icon"></i>
+              <h2 class="comp-def-head">تعريف بالمسابقة وأهدافها</h2>
+            </div>
+            <p class="comp-def-text">
+              تُعد مسابقة القرآن الكريم السنوية التي ينظمها مركز بصائر حدثًا
+              سنويًا يهدف إلى تشجيع حفظ القرآن الكريم وتجويده وتدبره، وتعزيز
+              مكانة القرآن الكريم في نفوس الشباب. تسعى المسابقة إلى تحقيق أهداف
+              سامية تتمثل في ربط الجيل الجديد بكتاب الله، وغرس القيم الإسلامية
+              الأصيلة في نفوسهم. وتتجاوز المسابقة مجرد حفظ الآيات، فهي رحلة
+              لاستكشاف معاني القرآن وفهم حكمه وتطبيقها في الحياة اليومية. من
+              خلال هذه المسابقة، نسعى إلى بناء جيل قرآني واعي قادر على حمل رسالة
+              الإسلام إلى العالم.
+            </p>
+          </div>
+          <div class="def-img-container">
+            <img class="def-img" src="img/comp-sec.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end comp defination -->
+    <!-- start comp level -->
+    <div class="comp-level">
+      <div class="container">
+        <h3 class="n-head">المستويات</h3>
+        <div class="comp-level-box">
+          <div class="lvls-info">
+            <div class="comp-level-box-info">
+              <div class="comp-level-head-box">
+                <i class="fa-solid fa-code-branch level-icon"></i>
+                <h2 class="comp-level-head">مستويات المسابقة</h2>
+              </div>
+              <p class="comp-level-text">
+                تقدم مسابقتنا القرآنية الكريم مجموعة متنوعة من المستويات لتناسب
+                جميع المشاركين، ابتداءً من المستوى الأساسي وصولاً إلى مستوى
+                المتقدمين. حيث تتدرج المستويات من حفظ أجزاء محددة إلى حفظ القرآن
+                كاملاً، مع التركيز على تدبر معاني الآيات وتطبيقها في الحياة
+                اليومية.
+              </p>
+            </div>
+            <img class="lvls-img" src="img/level-img.jpg" alt="" />
+          </div>
+          <div class="swiper-container swiper">
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الأول</h3>
+                <strong> الحفظ </strong>
+                <p>من سورة الأعلى إلى سورة الناس.</p>
+                <strong> التدبر </strong>
+                <p>التركيز على تدبر سورة الإخلاص وفهم معنى التوحيد.</p>
+                <strong>الشريحة العمرية:</strong>
+                <p>حتى 6 سنوات.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الثاني</h3>
+                <strong> الحفظ </strong>
+                <p>جزء عم.</p>
+                <strong> التدبر </strong>
+                <p>التركيز على تدبر سورة الإخلاص وفهم معنى التوحيد.</p>
+                <strong>الشريحة العمرية:</strong>
+                <p>حتى 8 سنوات.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الثالث</h3>
+                <strong> الحفظ </strong>
+                <p>جزئي تبارك وعم.</p>
+                <strong> التدبر </strong>
+                <p>التركيز على تدبر سورة الإخلاص وفهم معنى التوحيد.</p>
+                <strong>الشريحة العمرية:</strong>
+                <p>حتى 10 سنوات.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الرابع</h3>
+                <strong> الحفظ </strong>
+                <p>العشر الأخير من القرآن الكريم.</p>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر سور الفلق والناس وتطبيق معانيهما في الحياة
+                  اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>حتى 12 سنوات.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الخامس</h3>
+                <strong> الحفظ </strong>
+                <p>خمسة أجزاء من القرآن. (من سورة الأحقاف إلى سورة الناس)</p>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر سور الفلق والناس وتطبيق معانيهما في الحياة
+                  اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>حتى 15 سنوات.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى السادس</h3>
+                <div class="save-track">
+                  <div class="save">
+                    <strong> الحفظ </strong>
+                    <p>ربع القرآن.</p>
+                  </div>
+                  <div class="track">
+                    <strong> المسار </strong>
+                    <p>من سورة الفاتحة إلى سورة الأنعام</p>
+                    <p>من سورة يس إلى سورة الناس</p>
+                  </div>
+                </div>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر سور الفلق والناس وتطبيق معانيهما في الحياة
+                  اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>جميع الأعمار.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى السابع</h3>
+                <div class="save-track">
+                  <div class="save">
+                    <strong> الحفظ </strong>
+                    <p>عشرة أجزاء من القرآن الكريم.</p>
+                  </div>
+                  <div class="track">
+                    <strong> المسار </strong>
+                    <p>من سورة الفاتحة إلى سورة التوبة</p>
+                    <p>من سورة والعنكبوت إلى سورة الناس</p>
+                  </div>
+                </div>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر آية الكرسي وتطبيق معانيها في الحياة اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>جميع الأعمار.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى الثامن</h3>
+                <div class="save-track">
+                  <div class="save">
+                    <strong> الحفظ </strong>
+                    <p>نصف القرآن الكريم.</p>
+                  </div>
+                  <div class="track">
+                    <strong> المسار </strong>
+                    <p>من سورة الفاتحة إلى سورة الكهف</p>
+                    <p>من سورة الكهف إلى سورة الناس</p>
+                  </div>
+                </div>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر آية الكرسي وتطبيق معانيها في الحياة اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>جميع الأعمار.</p>
+              </div>
+            </div>
+            <div class="image-description">
+              <div class="lvls-text">
+                <h3 class="lvl-head">المستوى التاسع</h3>
+                <strong> الحفظ </strong>
+                <p>القرآن الكريم كاملاً.</p>
+                <strong> التدبر </strong>
+                <p>
+                  التركيز على تدبر آية الكرسي وتطبيق معانيها في الحياة اليومية.
+                </p>
+                <strong>الشريحة العمرية:</strong>
+                <p>جميع الأعمار.</p>
+              </div>
+            </div>
+
+            <div class="slider-wrapper">
+              <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-01.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-02.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-03.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-04.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-05.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-06.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-07.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-08.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-item swiper-slide">
+                  <div class="img-arrow">
+                    <img
+                      src="img/Level-09.jpg"
+                      alt="User Image"
+                      class="user-image"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end comp level -->
+    <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/count.js"></script>
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ----------------------- -->
+    <script src="js/comp-level-swiper.js"></script>
+  </body>
+</html>
