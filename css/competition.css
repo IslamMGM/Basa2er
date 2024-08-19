@@ -337,7 +337,7 @@
         radial-gradient(at 47% 33%, hsl(243, 18%, 56%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(217, 22%, 26%) 0, transparent 55%);
      border-radius: 10px;
-    height: 630px;
+    height: 715px;
     position: relative;
     margin-bottom: 50px;
     padding: 0 60px;
@@ -349,7 +349,7 @@
 .slider-wrapper {
     overflow: hidden;
     max-width: 1200px;
-    margin-bottom: 340px;
+    margin-bottom: 425px;
 
   }
   
@@ -461,7 +461,7 @@
     border-radius: 12px;
     border: 2px solid #ffffff20;
     width: 85%;
-    height: 360px;
+    height: 450px;
     padding: 15px 20px;
     border-radius: 10px;
   }
@@ -484,7 +484,7 @@
     font-size: 15px;
     margin-right: 21px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 2.3;
   }
 
   .lvls-text strong{
@@ -501,10 +501,33 @@
   }
 
   .save-track{
-    display: flex;
+    display: inline-flex;
+  }
+  .save p{
+    text-wrap: nowrap;
   }
   .track{
-    margin-right: 20%;
+    margin-right: 30px;
+  }
+  .track p{
+    line-height: 1.8;
+
+  }
+
+  @media screen and (max-width:767px){
+    .image-description {
+      padding: 5px 10px;
+    }
+    .lvls-text strong{
+      font-size: 14px;
+
+    }
+    .lvls-text p{
+      font-size: 13px;
+    }
+    .track{
+      margin-right: 7px;
+    }
   }
 
 
