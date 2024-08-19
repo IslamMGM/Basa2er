@@ -197,17 +197,18 @@
 /* Zoom effect on smaller screens */
 @media (max-width: 950px) {
   .def-img {
-      transform: scale(1.3); /* Increase the zoom level */
-      padding: 10%; /* Adds padding for a more dynamic effect */
+      transform: scale(1.2); /* Increase the zoom level */
+      padding: 8%; /* Adds padding for a more dynamic effect */
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:830px){
   .comp-def-box{
     display: block;
    }
    .comp-def-info{
     width: 100%;
+    margin-top: -50px;
    }
    .def-img-container {
     width: 100%;
@@ -216,8 +217,9 @@
 
    }
    .def-img{
-    height: 100%;
-    margin-top: -22px;
+    height: 95%;
+    margin-top: -27px;
+
    }
 }
 
@@ -225,97 +227,7 @@
 
 /* //// start levels section ///// */
 
-.n-head{
-    width: fit-content;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
-    font-weight:700;
-    position: relative;
-    color: #263b44;
-    padding: 15px 25px;
-    border: 2px solid #000;
-    transition-duration: 0.3s;
-}
 
-@media screen and (max-width:767px){
-    .n-head{
-        font-size: 15px;
-     }
-    
-}
-.n-head::before{
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background-color: #616cb5;
-    transition-duration:0.3s;
-
-}
-.n-head::after{
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background-color: #616cb5;
-    transition-duration: 0.3s;
-
-}
-
-.n-head:hover{
-    z-index: 1;
-    color: #ffffff;
-    transition-delay: 0.3s;
-    border-color: #ffffff;
-}
-
-.n-head:hover::before{
-     z-index: -1;
-     animation: left-move 0.3s linear forwards;
-}
-.n-head:hover::after{
-    z-index: -1;
-    animation: right-move 0.3s linear forwards;
-}
-
-@keyframes left-move {
-    50%{
-        right: 0;
-        width: 12px;
-        height: 12px;
-    }
-    100%{
-        right: 0;
-        border-radius: 0;
-        width: 50%;
-        height: 100%;
-
-    }
-}
-@keyframes right-move {
-    50%{
-        left: 0;
-        width: 12px;
-        height: 12px;
-    }
-    100%{
-        left: 0;
-        border-radius: 0;
-        width: 50%;
-        height: 100%;
-
-    }
-}
 .comp-level-box{
     direction: rtl;
 }
@@ -385,17 +297,19 @@
 /* Zoom effect on smaller screens */
 @media (max-width: 950px) {
   .lvls-img {
-      transform: scale(1.3); /* Increase the zoom level */
-      padding: 10%; /* Adds padding for a more dynamic effect */
+    transform: scale(1.2); /* Increase the zoom level */
+    padding: 8%; /* Adds padding for a more dynamic effect */
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:830px){
   .lvls-info{
     display: block;
    }
    .comp-level-box-info{
     width: 100%;
+    margin-top: -50px;
+
    }
    .level-img-container {
     width: 100%;
@@ -404,8 +318,9 @@
 
    }
    .lvls-img{
-    height: 100%;
-    margin-top: -22px;
+    height: 95%;
+    margin-top: -27px;
+
    }
 }
 
@@ -430,10 +345,6 @@
 
 }
 
-@media screen and (max-width:767px) {
- 
-    
-}
 
 .slider-wrapper {
     overflow: hidden;
@@ -533,15 +444,6 @@
 
   }
 
-  @media (max-width: 768px) {
-    /* .slider-wrapper {
-      margin: 0 10px 40px;
-    } */
-  
-    /* .slider-wrapper .swiper-slide-button {
-      display: none;
-    } */
-  }
 
 
   .image-description {
@@ -604,6 +506,202 @@
   .track{
     margin-right: 20%;
   }
+
+
+  /* //// end levels section ///// */
+
+  /* //// start geo section ///// */
+
+.geo-container{
+  direction: rtl;
+  margin-bottom: 100px;
+}
+.all,
+.half,
+.more,
+.ch-and-half{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  width: fit-content;
+  background-color: #535d9b;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  line-height: 2;
+}
+
+@media screen and (max-width:767px){
+  .all,
+.half,
+.more,
+.ch-and-half{
+  font-size: 17px;
+}
+}
+
+.all:hover{
+  background-color: #495087;
+  transition: 0.3s;
+}
+.half:hover{
+  background-color: #495087;
+  transition: 0.3s;
+}
+.more:hover{
+  background-color: #495087;
+  transition: 0.3s;
+}
+.ch-and-half:hover{
+  background-color: #495087;
+  transition: 0.3s;
+}
+
+
+
+
+
+.all::before{
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  font-size: 25px;
+   left: 16px;
+   transition: transform 0.5s ease;
+}
+
+.half::before{
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  font-size: 25px;
+   left: 16px;
+   transition: transform 0.5s ease;
+
+}
+.more::before{
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  font-size: 25px;
+   left: 16px;
+   transition: transform 0.5s ease;
+
+}
+.ch-and-half::before{
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  font-size: 25px;
+   left: 16px;
+   transition: transform 0.5s ease;
+}
+
+@media screen and (max-width:767px){
+  .all::before{
+    top: 6px;
+    font-size: 24px;
+     left: 18px;
+  }
+  .half::before{
+    top: 6px;
+    font-size: 24px;
+     left: 18px;
+  }
+  .more::before{
+    top: 6px;
+    font-size: 24px;
+     left: 18px;
+  }
+  .ch-and-half::before{
+    top: 6px;
+    font-size: 24px;
+     left: 18px;
+  }
+}
+
+/* Rotate 180 degrees when active */
+.all.rotate::before {
+  transform: rotate(180deg);
+}
+.half.rotate::before {
+  transform: rotate(180deg);
+}
+.more.rotate::before {
+  transform: rotate(180deg);
+}
+.ch-and-half.rotate::before {
+  transform: rotate(180deg);
+}
+
+
+.map-all-container,
+.map-all-half-container,
+.map-more-container,
+.map-ch-container{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.down-div.show {
+  max-height: 500px; /* Adjust this value to fit your content */
+}
+
+.geo-h5{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 22px;
+  margin-bottom: 20px;
+  width: fit-content;
+  background-color: #96f2d7;
+  border: 1px solid rgb(109, 193, 126);
+  color: #000000;
+  border-radius: 5px;
+}
+
+.geo-head-box img{
+  margin-bottom: 30px;
+  width: 400px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 10px #22a1b528;
+  border: 1px solid #00000062;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .record{

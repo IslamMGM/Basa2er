@@ -79,6 +79,7 @@
         <h4 class="form-label">بيانات المتسابق</h4>
       </div>
       <div class="submit" id="customButton">إرسال</div>
+      <div class="loader"></div>
       <iframe
         id="embeddedForm"
         class="form-frame"
@@ -163,6 +164,15 @@
       </div>
       <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
     </div>
+    <script>
+      window.addEventListener("load", function () {
+        const slowContent = document.querySelector(".form-frame");
+        const loader = document.querySelector(".loader");
+
+        slowContent.style.visibility = "visible"; // Show the content
+        loader.style.display = "none"; // Hide the loader
+      });
+    </script>
     <script src="js/header.js"></script>
   </body>
 </html>
