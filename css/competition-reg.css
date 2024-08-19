@@ -32,12 +32,64 @@ body{
         margin-top: -4px;
     }
 }
+/* //////// */
 
 
-.comp-reg-img{
+.comp-img-reg-container {
+    position: relative;
+    overflow: hidden;
+     width: 100%;
+     height: 900px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  /* The image fills its container and maintains aspect ratio */
+  .comp-reg-img{
     width: 100%;
-    height: 422px;
-}
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0; /* Ensure no padding initially */
+  }
+  
+  /* Zoom effect on smaller screens */
+  @media (max-width: 950px) {
+    .comp-reg-img {
+        transform: scale(1.2); /* Increase the zoom level */
+        padding: 2%; /* Adds padding for a more dynamic effect */
+    }
+  }
+  
+  @media screen and (max-width:830px){
+     .comp-reg-img{
+      height: 95%;  
+     }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////// */
 .form-head{
     position: absolute;
     height: 110px;
