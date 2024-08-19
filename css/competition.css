@@ -684,10 +684,10 @@
 
 .geo-head-box img{
   margin-bottom: 30px;
-  width: 400px;
-  height: 350px;
+  width: 340px;
+  max-width: 400px;
+  height: 290px;
   border-radius: 5px;
-  box-shadow: 0px 0px 40px 10px #22a1b528;
   border: 1px solid #00000062;
 }
 
