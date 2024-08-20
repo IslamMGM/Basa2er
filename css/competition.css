@@ -383,7 +383,7 @@ background-color: #000000c2;
         radial-gradient(at 47% 33%, hsl(243, 18%, 56%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(217, 22%, 26%) 0, transparent 55%);
      border-radius: 10px;
-    height: 715px;
+    height: 690px;
     position: relative;
     margin-bottom: 50px;
     padding: 0 60px;
@@ -395,7 +395,7 @@ background-color: #000000c2;
 .slider-wrapper {
     overflow: hidden;
     max-width: 1200px;
-    margin-bottom: 425px;
+    margin-bottom: 400px;
 
   }
   
@@ -507,7 +507,7 @@ background-color: #000000c2;
     border-radius: 12px;
     border: 2px solid #ffffff20;
     width: 85%;
-    height: 450px;
+    height: 425px;
     padding: 15px 20px;
     border-radius: 10px;
   }
@@ -550,7 +550,7 @@ background-color: #000000c2;
     display: inline-flex;
   }
   .save p{
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   .track{
     margin-right: 30px;
@@ -560,7 +560,22 @@ background-color: #000000c2;
 
   }
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width:590px){
+    .image-description {
+      padding: 5px 10px;
+    }
+    .lvls-text strong{
+      font-size: 12px;
+
+    }
+    .lvls-text p{
+      font-size: 11px;
+    }
+    .track{
+      margin-right: 5px;
+    }
+  }
+  @media screen and (min-width:590px) and (max-width:767px){
     .image-description {
       padding: 5px 10px;
     }
@@ -572,7 +587,7 @@ background-color: #000000c2;
       font-size: 13px;
     }
     .track{
-      margin-right: 7px;
+      margin-right: 8px;
     }
   }
 
