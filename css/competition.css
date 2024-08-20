@@ -1,130 +1,175 @@
 
 /* ///// start landing section  ///// */
 .landing-container{
-    overflow: hidden;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 130px;
-  }
+  overflow: hidden;
+  position: relative;
+  margin-top: 0px;
+  /* margin-bottom: 100px; */
+  
+ }
 
-  @media screen and (max-width: 767px){
-    .landing-container{
-        margin-top: 0;
-       }
-    
+@media screen and (max-width: 767px){
+  .landing-container{
+      margin-top: 0;
+     }
+  
 }
 
 .mySlides{
-    display: none;
+  display: none;
+
+  position: relative;
+  overflow: hidden;
+   width: 100%;
 }
 
 .mySlides .cover-img{
-    display: block;
-    width: 100%;
-    height: 700px;
+
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+  padding: 0; /* Ensure no padding initially */
 }
-@media screen and (max-width:767px){
-    .mySlides .cover-img{
-        height: 420px;
-    }
+
+/* Zoom effect on smaller screens */
+@media (max-width: 950px) {
+  .cover-img {
+      transform: scale(1.2); /* Increase the zoom level */
+      padding: 2%; /* Adds padding for a more dynamic effect */
+  }
 }
+
+/* @media screen and (max-width:830px){
+   .cover-img{
+    
+   }
+} */
+
 
 .prev,
 .next{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    color: #ffffff;
-    font-size: 30px;
-    padding: 20px;
-    background: #add8e611;
-    user-select: none;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  color: #000000;
+  font-size: 33px;
+  padding: 12px;
+  background: #0000001b;
+  user-select: none;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .prev:hover{
-    background: #add8e625;
+  background: #00000036;
 
 }
 .next:hover{
-    background: #add8e625;
+  background: #00000036;
 }
 
 .prev{
-     border-radius: 0 5px 5px 0;
-    left: -60px;
+  border-radius: 0 5px 5px 0;
+  left: -60px;
 }
 .next{
-     border-radius: 5px 0 0 5px;
-    right: -60px;
- 
+   border-radius: 5px 0 0 5px;
+  right: -60px;
+
 }
 
 .landing-container:hover .prev{
-    left: 0px;
+  left: 0px;
 }
 .landing-container:hover .next{
-     right: 0px;
+   right: 0px;
 }
 @media screen and (max-width:767px){
-    .prev{
-        left: 0;
- 
-    }
-    .next{
-        right: 0;
- 
-    }
-    
+  .prev{
+      left: 0;
+      background-color: transparent;
+      font-size: 25px;
+
+  }
+  .next{
+      right: 0;
+      background-color: transparent;
+      font-size: 25px;
+  }
+  .prev:hover{
+      background: transparent;
+  
+  }
+  .next:hover{
+      background: transparent;
+  }
+  
 }
 
 .dots-container{
-    position: absolute;   
-    bottom: 12px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
+  /* position: absolute;    */
+  /* bottom: 12px;
+  left: 50%;
+  transform: translate(-50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #f3f3f3aa;
+   z-index: 1;
 }
 
 .dots-container .dots{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin: 0 4px;
-    background-color: #add8e633;
-    backdrop-filter: blur(2px);
-    display: inline-block;
-    cursor: pointer;
-    transition:0.3s ease;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #0000005f;
+  backdrop-filter: blur(2px);
+  display: inline-block;
+  cursor: pointer;
+  transition:0.3s ease;
 }
 
 
 .dots:hover {
-  background-color: #add8e6cc;
+background-color: #000000c2;
 }
 .active{
-    background-color: #add8e6cc !important;
+  background-color: #000000c2 !important;
+  width: 30px !important;
+  border-radius: 10px !important;
+}
+@media screen and (max-width:767px){
+  .dots-container {
+      padding: 20px 0;
+
+  }
+  .dots-container .dots{
+      height: 10px;
+      width: 10px;
+  }
+  .active{
+       width: 20px !important;
+   }
 }
 
-
 .animate {
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 0.3s;
-    animation-name: animate;
-    animation-duration: 2s;
-  }
-  
-  @keyframes animate {
-    from {
-      transform: scale(1.05) rotateY(10deg);
-    }
-    to {
-      transform: scale(1) rotateY(0deg);
-    }
-  }
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.3s;
+  animation-name: animate;
+  animation-duration: 2s;
+}
 
+@keyframes animate {
+  from {
+    transform: scale(1.05) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
 /* //// end landing section ///// */
 
 /* //// start def section ///// */
