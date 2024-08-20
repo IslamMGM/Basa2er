@@ -46,11 +46,11 @@ function showSlides() {
 
   // Remove 'active' class from all dots
   dots.forEach((dot) => {
-    dot.classList.remove("active");
+    dot.classList.remove("active-dot");
   });
 
   // Highlight the current dot
-  dots[slideIndex].classList.add("active");
+  dots[slideIndex].classList.add("active-dot");
 }
 /////////////////////////////////////////////////////////////
 

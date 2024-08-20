@@ -132,11 +132,11 @@
   transition:0.3s ease;
 }
 
-
+/* ////////////// */
 .dots:hover {
 background-color: #000000c2;
 }
-.active{
+.active-dot{
   background-color: #000000c2 !important;
   width: 30px !important;
   border-radius: 10px !important;
@@ -150,11 +150,11 @@ background-color: #000000c2;
       height: 10px;
       width: 10px;
   }
-  .active{
+  .active-dot{
        width: 20px !important;
    }
 }
-
+/* /////////////// */
 .animate {
   -webkit-animation-name: animate;
   -webkit-animation-duration: 0.3s;
@@ -177,6 +177,7 @@ background-color: #000000c2;
     display: inline-flex;
     flex-direction: row;
     gap: 5px;
+    margin-top: 70px;
     margin-bottom: 100px;
     box-shadow: 0px 0px 40px 10px #b0848423;
     border-radius: 10px;
