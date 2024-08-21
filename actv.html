@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style></style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -17,14 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- animate on scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- ------------------ -->
     <link rel="stylesheet" href="css/hesder.css" />
-    <link rel="stylesheet" href="css/competition-reg.css" />
+    <link rel="stylesheet" href="css/soon.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <title>تسجيل المؤسسات</title>
+    <title>مركز بصائر</title>
   </head>
   <body>
     <!-- start header -->
-    <header class="main-header comp-header">
+    <header class="main-header">
       <div class="container">
         <div class="logo-container">
           <img id="logo" class="logo" src="img/logo.png" alt="" />
@@ -35,7 +40,7 @@
             <li>
               <a class="d-links" id="link1" href="index.html">الرئيسية</a>
             </li>
-            <li><a class="d-links" id="link4">فروعنا</a></li>
+            <li><a class="d-links" id="link4" href="index.html">فروعنا</a></li>
             <li>
               <a class="d-links" id="link6" href="competition.html"
                 >المسابقة السنوية</a
@@ -68,7 +73,7 @@
               <a class="m-links" href="competition.html">المسابقة السنوية</a>
             </li>
             <li class="m-lin">
-              <a class="m-links" href="actv.html">أنشطتنا</a>
+              <a class="m-links" href="">أنشطتنا</a>
             </li>
             <li class="m-lin">
               <a class="m-links" href="hlaqat.html">حلقاتنا</a>
@@ -79,24 +84,14 @@
       </div>
     </header>
     <!-- end header -->
-    <div class="comp-img-reg-container">
-      <img class="comp-reg-img" src="img/comp-reg.jpg" alt="1111" />
+    <div class="wrapper">
+      <h1>أنشطة ودورات بصائر</h1>
+      <h1>.... قريباً</h1>
+      <div class="loader"></div>
     </div>
 
-    <div class="form-container">
-      <div class="form-head">
-        <h4 class="form-label">بيانات المتسابق</h4>
-      </div>
-      <div class="submit" id="customButton">إرسال</div>
-      <div class="loader"></div>
-      <iframe
-        id="embeddedForm"
-        class="form-frame"
-        src="https://people.zohopublic.com/basa2er/embedLiveFormHeader.hr?digest=08ab6bca9c2984182217ffd1df7813b6ef135d5e6c4cb4b413a2cb9337b4353a875b805e1b78d78f4a9ce599684a7e5b&font=Times New Roman&headercolor=&sectionheadercolor="
-      >
-      </iframe>
-    </div>
-    <div class="footer-2">
+    <!-- start footer -->
+    <div class="footer-2 soon">
       <div class="container">
         <div class="sec1">
           <h3 class="footer-h3">مركز بصائر</h3>
@@ -147,7 +142,7 @@
         <div class="sec1">
           <ul class="footer-links">
             <li><a href="#">منهج مركز بصائر</a></li>
-            <li><a href="actv.html">أنشطة مركز بصائر</a></li>
+            <li><a href="#">أنشطة مركز بصائر</a></li>
             <li><a href="hlaqat.html">حلقات مركز بصائر</a></li>
           </ul>
         </div>
@@ -173,15 +168,6 @@
       </div>
       <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
     </div>
-    <script>
-      window.addEventListener("load", function () {
-        const slowContent = document.querySelector(".form-frame");
-        const loader = document.querySelector(".loader");
-
-        slowContent.style.visibility = "visible"; // Show the content
-        loader.style.display = "none"; // Hide the loader
-      });
-    </script>
     <script src="js/header.js"></script>
   </body>
 </html>
