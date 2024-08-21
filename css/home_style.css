@@ -310,6 +310,7 @@
     font-size: 24px;
     gap: 0.5rem;
     align-items: center;
+    text-decoration: none;
   }
   
   .new-more-det p {
