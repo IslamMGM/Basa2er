@@ -342,7 +342,7 @@
   }
   
   .new-more-det:hover::after {
-    width: 100%;
+    /* width: 100%; */
   }
   
   .new-more-det:hover p::before {
