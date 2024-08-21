@@ -25,6 +25,7 @@
 .mySlides .cover-img{
 
     width: 100%;
+    /* aspect-ratio: 3/1; */
     object-fit: cover;
     transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
     padding: 0; /* Ensure no padding initially */
@@ -135,7 +136,7 @@
 .dots:hover {
   background-color: #000000c2;
 }
-.active{
+.active-dot{
     background-color: #000000c2 !important;
     width: 30px !important;
     border-radius: 10px !important;

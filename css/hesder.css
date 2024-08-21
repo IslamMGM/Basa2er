@@ -347,7 +347,7 @@ input[type]:checked ~ span.mid {
 
 @media screen and (max-width:767px){
     .n-head{
-        font-size: 15px;
+        font-size: 19px;
      }
     
 }
