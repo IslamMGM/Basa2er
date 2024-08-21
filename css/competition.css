@@ -594,6 +594,67 @@ background-color: #000000c2;
 
   /* //// end levels section ///// */
 
+
+/* //// start participate-way section ///// */
+.participate-way-box{
+  direction: rtl;
+}
+
+ol, ul {
+  margin-right: 20px; 
+}
+
+ol li ul, ol li ol {
+  margin-right: 20px; 
+  list-style-type: disc;
+}
+
+.parti-heads{
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 800;
+  width: fit-content;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #066347;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+
+ol li{
+  line-height: 2;
+  font-size: 19px;
+  font-weight: 500;
+  color: #044935;
+ }
+ol li ul li{
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #05553d;
+ }
+
+ .last-ul li{
+  line-height: 2;
+  font-size: 19px;
+  font-weight: 500;
+  color: #044935;
+ }
+
+
+
+
+
+
+/* //// end participate-way section ///// */
+
+
+
+
+
+
+
   /* //// start geo section ///// */
 
 .geo-container{
