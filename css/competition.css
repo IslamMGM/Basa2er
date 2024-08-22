@@ -201,12 +201,12 @@ background-color: #000000c2;
 .def-icon{
     margin-left: auto;
     margin-bottom: 10px;
-    font-size: 25px;
-    border-radius: 5px;
-    width: fit-content;
-    background-color: #d0ebff;
-    color: #1d69ac;
-    padding: 12px;
+      width: fit-content;
+      padding: 12px;
+      font-size: 20px;
+      border-radius: 5px;
+      color: #525c9c;
+       background-color: #d8e8e8;
     
 }
 .comp-def-head{
@@ -300,13 +300,13 @@ background-color: #000000c2;
     
 }
 .level-icon{
-    margin: 10px 0 15px 0;
-    font-size: 25px;
-    border-radius: 5px;
+    margin-bottom:10px;
     width: fit-content;
-    background-color: #d0ebff;
-    color: #1d69ac;
     padding: 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #525c9c;
+     background-color: #d8e8e8;
 }
 .comp-level-head{
     font-size: 21px;
