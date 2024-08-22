@@ -619,6 +619,7 @@ ol li ul, ol li ol {
   background-color: #066347;
   color: #ffffff;
   margin-top: 30px;
+  text-wrap: nowrap;
 }
 
 
@@ -656,7 +657,7 @@ ol li ul li{
  @media screen and (max-width:767px){
 
   .parti-heads{
-    font-size: 17px;
+    font-size: 14px;
   }
 
   ol li{
