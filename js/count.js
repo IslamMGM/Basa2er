@@ -7,9 +7,9 @@ window.addEventListener("scroll", function () {
   const countElements = document.querySelectorAll(".sts-num");
 
   // Check if the element is in view and remove the 'animated' class if it goes out of view
-  if (gotoElement.getBoundingClientRect().top > window.innerHeight) {
-    gotoElement.classList.remove("animated");
-  }
+  // if (gotoElement.getBoundingClientRect().top > window.innerHeight) {
+  //   gotoElement.classList.remove("animated");
+  // }
 
   if (
     gotoElement.getBoundingClientRect().top <= window.innerHeight &&
