@@ -225,8 +225,12 @@
 }
 
 .info-svg{
-    height: 45px;
-    width: 45px;
+    width: fit-content;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #525c9c;
+     background-color: #d8e8e8;
    }
 
 .info-head{

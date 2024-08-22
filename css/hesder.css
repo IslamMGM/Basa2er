@@ -168,6 +168,7 @@ html {
     width: 0;
     list-style: none;
     z-index: 555 !important;
+    margin-right: 0;
 }
 
 .m-nav-container{

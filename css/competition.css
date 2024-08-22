@@ -642,15 +642,116 @@ ol li ul li{
   color: #044935;
  }
 
+ .org li{
+  line-height: 2;
+  font-size: 19px;
+  font-weight: 500;
+  color: #044935;
+ }
 
+ .org-cont{
+  margin-top:30px;
+ }
 
+ @media screen and (max-width:767px){
+
+  .parti-heads{
+    font-size: 17px;
+  }
+
+  ol li{
+     font-size: 15px;
+     }
+  ol li ul li{
+     font-size: 14px;
+     }
+  
+   .last-ul li{
+     font-size: 15px;
+    }
+  
+   .org li{
+     font-size: 15px;
+     }
+  
+ }
 
 
 
 /* //// end participate-way section ///// */
 
 
+ /* //// start record section ///// */
 
+ .record{
+  direction: rtl;
+}
+
+.record-box{
+  margin-top: 50px;
+}
+
+.record-link-box{
+text-align: center;
+margin-top: -20px;
+margin-bottom: 50px;
+}
+
+.record-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: #098660;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 12px 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #098660;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.record-link:hover {
+  background-color: #076a4c;
+}
+
+.record-link:hover .button__icon-wrapper {
+  color: #076a4c;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.record-link:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.record-link:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
+
+
+
+ /* //// end record section ///// */
 
 
 
@@ -909,6 +1010,18 @@ ol li ul li{
   place-items: center;
 }
 
+@media screen and (max-width:767px) {
+  .tadbr-heads{
+     font-size: 18px;
+  }
+  .tadbr-str{
+    font-size: 16px;
+  }
+  .tadbr-text{
+     font-size: 16px;
+  }
+}
+
 .track-one,
 .track-two,
 .track-three{
@@ -1134,7 +1247,7 @@ ol li ul li{
   text-decoration: none;
   direction: ltr;
   transition: 0.3s;
-
+  text-wrap: nowrap;
 }
 
 .Download-button svg {
@@ -1199,74 +1312,3 @@ ol li ul li{
 
 
 
-
-
-
-
-
-  /* //// start record section ///// */
-
-.record{
-    direction: rtl;
-}
-
-.record-box{
-    margin-bottom: 100px;
-}
-
-.record-link-box{
-  text-align: center;
-}
- 
-.record-link {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: .75rem;
-    background-color: #616cb5;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 700;
-    padding: 12px 25px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: 0.3s;
-  }
-  
-  .button__icon-wrapper {
-    flex-shrink: 0;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    color: #616cb5;
-    background-color: #fff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  
-  .record-link:hover {
-    background-color: #495185;
-  }
-  
-  .record-link:hover .button__icon-wrapper {
-    color: #363c65;
-  }
-  
-  .button__icon-svg--copy {
-    position: absolute;
-    transform: translate(-150%, 150%);
-  }
-  
-  .record-link:hover .button__icon-svg:first-child {
-    transition: transform .3s ease-in-out;
-    transform: translate(150%, -150%);
-  }
-  
-  .record-link:hover .button__icon-svg--copy {
-    transition: transform .3s ease-in-out .1s;
-    transform: translate(0);
-  }
-  
