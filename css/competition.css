@@ -1339,9 +1339,10 @@ margin-bottom: 50px;
   margin: 0 auto;
   margin-top: -40px;
    width: 70%;
-   box-shadow: 0 0 30px 5px #0000001d;
-  border-radius: 10px;
-  border: 5px solid #05553d61;
+   box-shadow: 0 0 30px 5px #00000012;
+  border-radius: 10px 10px 0 0 ;
+  /* border: 2px solid #05553d61; */
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1355,8 +1356,8 @@ margin-bottom: 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
-
-}
+  
+ }
 
 .mySlides-kid .kid-p-img {
   width: 100%;
@@ -1430,7 +1431,7 @@ margin-bottom: 50px;
   align-items: center;
   padding: 30px 0;
   background-color: #f3f3f3aa;
-  z-index: 1;
+  z-index: 5;
   width: 70%;
   margin: 0 auto;
 }

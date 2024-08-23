@@ -117,3 +117,22 @@ btn.addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// ////// make page's link is active /////
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".d-links");
+  const currentPath = window.location.pathname.split("/").pop(); // Extracts 'index.html' from '/Website/Basa2er/index.html'
+
+  console.log("Current Path: ", currentPath);
+
+  navLinks.forEach((link) => {
+    console.log("Link Href: ", link.getAttribute("href"));
+
+    // Compare the href attribute with the currentPath
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active_navlink");
+      console.log("Active class added to: ", link);
+    }
+  });
+});

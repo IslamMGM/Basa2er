@@ -119,6 +119,23 @@ html {
     text-wrap: nowrap;
 }
 
+.d-links.active_navlink{
+    background: radial-gradient(
+        ellipse at bottom,
+        #727fd24f 0%,
+        #899fe913 85%
+      );
+      border: 2px solid #616cb56d;
+    border-radius: 3px;
+ }
+
+ .d-links.active_navlink:hover::before{
+    display: none;
+ }
+ .d-links.active_navlink:hover::after{
+    display: none;
+ }
+
 @media screen and (max-width:970px){
     .d-links{
         font-size: 13px;
