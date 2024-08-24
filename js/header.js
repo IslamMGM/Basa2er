@@ -120,11 +120,35 @@ btn.addEventListener("click", function (e) {
 
 // ////// make page's link is active /////
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navLinks = document.querySelectorAll(".d-links");
+//   const currentPath = window.location.pathname.split("/").pop(); // Extracts 'index.html' from '/Website/Basa2er/index.html'
+
+//   console.log("Current Path: ", currentPath);
+
+//   navLinks.forEach((link) => {
+//     console.log("Link Href: ", link.getAttribute("href"));
+
+//     // Compare the href attribute with the currentPath
+//     if (link.getAttribute("href") === currentPath) {
+//       link.classList.add("active_navlink");
+//       console.log("Active class added to: ", link);
+//     }
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".d-links");
-  const currentPath = window.location.pathname.split("/").pop(); // Extracts 'index.html' from '/Website/Basa2er/index.html'
+  let currentPath = window.location.pathname.split("/").pop(); // Extracts the filename from the URL
 
-  console.log("Current Path: ", currentPath);
+  console.log("Current Path before check: ", currentPath);
+
+  // If currentPath is empty, set it to 'index.html'
+  if (currentPath === "") {
+    currentPath = "index.html";
+  }
+
+  console.log("Current Path after check: ", currentPath);
 
   navLinks.forEach((link) => {
     console.log("Link Href: ", link.getAttribute("href"));
@@ -135,4 +159,17 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Active class added to: ", link);
     }
   });
+});
+
+// change the color of header after scrolling //
+
+const header = document.querySelector(".main-header");
+const scrollThreshold = 520;
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= scrollThreshold) {
+    header.classList.add("active_header");
+  } else {
+    header.classList.remove("active_header");
+  }
 });

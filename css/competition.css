@@ -3,15 +3,15 @@
 .landing-container{
   overflow: hidden;
   position: relative;
-  margin-top: 0px;
+  margin-top: 80px;
   /* margin-bottom: 100px; */
   
  }
 
 @media screen and (max-width: 767px){
   .landing-container{
-      margin-top: 0;
-     }
+    margin-top: 90px;
+  }
   
 }
 
