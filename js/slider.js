@@ -72,3 +72,24 @@ setInterval(() => {
 function resetTimer() {
   timer = _timer; // Reset timer
 }
+
+// ////.................///////////////
+// remove the animation landing img on mobile view
+function checkWidthAndRemoveClass() {
+  const divs = document.querySelectorAll(".mySlides"); // Select all elements with the class 'my-div'
+
+  // Define the width where you want to remove the class
+  const specificWidth = 768; // Example width
+
+  divs.forEach((div) => {
+    if (window.innerWidth <= specificWidth) {
+      div.classList.remove("animate"); // Remove the class if the condition is met
+    } else {
+      div.classList.add("animate"); // Optionally add it back if the condition isn't met
+    }
+  });
+}
+
+// Run the function on load and on resize
+window.addEventListener("load", checkWidthAndRemoveClass);
+window.addEventListener("resize", checkWidthAndRemoveClass);
