@@ -70,15 +70,22 @@ html {
 }
 
 .main-header{
-    background-color: #E5F5F5;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 2;
 }
 
+@media screen and (max-width:767px) {
+    .main-header{
+        background-color: #314a64;
+
+    }
+}
+
 .main-header.active_header{
-    /* background-color: #a2adad; */
+    background-color: #314a64;
     transition: 0.3s;
 }
 
@@ -123,7 +130,7 @@ html {
     overflow: hidden;
     padding:10px 15px ;
     margin-left: 15px;
-    color: #212529;
+    color: #ffffff;
     cursor: pointer;
     text-wrap: nowrap;
 }
@@ -282,18 +289,18 @@ html {
      width: 3.1em;
     height: 3.1em;
     border-radius: 0.5em;
-     border: 1px solid #e8e8e8;
+     border: 2px solid #e8e8e855;
     transition: all .3s;
     cursor: pointer;
 }
 
 .menuButton:hover {
-  border: 1px solid white;
+  border: 2px solid white;
   transition-duration: var(--main-transition);
 }
 
 .menuButton:active {
-    border: 1px solid white;
+    border: 2px solid white;
     transition-duration: var(--main-transition);
 
 }
@@ -312,7 +319,7 @@ input[type = "checkbox"] {
 .menuButton span {
   width: 30px;
   height: 4px;
-  background: #114d6e;
+  background: #e0ebf2;
   border-radius: 100px;
   transition: 0.3s ease;
 }

@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // change the color of header after scrolling //
 
 const header = document.querySelector(".main-header");
-const scrollThreshold = 520;
+const scrollThreshold = 200;
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= scrollThreshold) {
