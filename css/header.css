@@ -85,7 +85,7 @@ html {
 }
 
 .main-header.active_header{
-    background-color: #314a64;
+    background-color: #092D38;
     transition: 0.3s;
 }
 
@@ -136,14 +136,14 @@ html {
 }
 
 .d-links.active_navlink{
-    background: radial-gradient(
+    /* background: radial-gradient(
         ellipse at bottom,
-        #727fd24f 0%,
-        #899fe913 85%
-      );
-      border: 2px solid #616cb56d;
-    border-radius: 3px;
- }
+        #ffffff57 0%,
+        #0b1c2a3a 95%
+      ); */
+      border-bottom: 5px solid #9c9c9c;
+      border-radius: 7px;
+  }
 
  .d-links.active_navlink:hover::before{
     display: none;
@@ -164,7 +164,7 @@ html {
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: #212529;
+    background-color: #ffffff;
     bottom: 0;
     left: 50%;
     transition-duration:var(--main-transition);
@@ -177,7 +177,7 @@ html {
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: #212529;
+    background-color: #ffffff;
     bottom: 0;
     right: 50%;
     transition-duration: var(--main-transition);
