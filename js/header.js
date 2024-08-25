@@ -139,6 +139,7 @@ btn.addEventListener("click", function (e) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".d-links");
+  const mLinks = document.querySelectorAll(".m-links");
   let currentPath = window.location.pathname.split("/").pop(); // Extracts the filename from the URL
 
   console.log("Current Path before check: ", currentPath);
@@ -157,6 +158,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (link.getAttribute("href") === currentPath) {
       link.classList.add("active_navlink");
       console.log("Active class added to: ", link);
+    }
+  });
+  mLinks.forEach((link_M) => {
+    console.log("link_M Href: ", link_M.getAttribute("href"));
+
+    // Compare the href attribute with the currentPath
+    if (link_M.getAttribute("href") === currentPath) {
+      link_M.classList.add("active_navlink-m");
+      console.log("Active class added to: ", link_M);
     }
   });
 });
