@@ -141,8 +141,9 @@ html {
         #ffffff57 0%,
         #0b1c2a3a 95%
       ); */
-      border-bottom: 5px solid #9c9c9c;
+      border-bottom: 5px solid #8592ea;
       border-radius: 7px;
+      color: #8592ea;
   }
 
  .d-links.active_navlink:hover::before{
@@ -186,11 +187,11 @@ html {
     width: 50%;
 }
 
-.d-links-active{
+/* .d-links-active{
     background-color: #5d5d5d;
     color: white;
     transition: var(--main-transition);
-}
+} */
 
 .m-nav{
     position: absolute;

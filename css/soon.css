@@ -7,7 +7,10 @@ body {
     color: #fff;
    }
   
-  
+.soon-header{
+  position: static !important;
+}
+
   @keyframes fadeIn {
     from {top: 5%; opacity: 0;}
     to {top: 100; opacity: 1;}
