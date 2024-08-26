@@ -25,20 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
   recordBtn.addEventListener("click", function (event) {
     event.preventDefault();
     form1.style.display = "block";
-    form2.style.display = "none";
+    // form2.style.display = "none";
 
     // Add 'active' class to recordBtn and remove from updateBtn
     recordBtn.classList.add("active_btn");
-    updateBtn.classList.remove("active_btn");
+    // updateBtn.classList.remove("active_btn");
   });
 
-  updateBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    form1.style.display = "none";
-    form2.style.display = "block";
+  // updateBtn.addEventListener("click", function (event) {
+  //   event.preventDefault();
+  //   form1.style.display = "none";
+  //   form2.style.display = "block";
 
-    // Add 'active' class to updateBtn and remove from recordBtn
-    updateBtn.classList.add("active_btn");
-    recordBtn.classList.remove("active_btn");
-  });
+  //   // Add 'active' class to updateBtn and remove from recordBtn
+  //   updateBtn.classList.add("active_btn");
+  //   recordBtn.classList.remove("active_btn");
+  // });
 });

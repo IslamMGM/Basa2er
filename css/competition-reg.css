@@ -22,7 +22,9 @@ body{
     position: relative;
     overflow: hidden;
     display: block;
-    margin: 60px auto;
+    margin-bottom: 60px  ;
+    margin-right:   auto;
+    margin-left:   auto;
     width: 75%;
     background-color: white;
 }
@@ -92,6 +94,7 @@ body{
   /* The image fills its container and maintains aspect ratio */
   .comp-reg-img{
     width: 100%;
+    aspect-ratio: 3/1;
     object-fit: cover;
     transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
     padding: 0; /* Ensure no padding initially */
@@ -100,14 +103,14 @@ body{
   /* Zoom effect on smaller screens */
   @media (max-width: 950px) {
     .comp-reg-img {
-        transform: scale(1.2); /* Increase the zoom level */
-        padding: 2%; /* Adds padding for a more dynamic effect */
+        transform: scale(1.1); /* Increase the zoom level */
+        padding: 1%; /* Adds padding for a more dynamic effect */
     }
   }
   
   @media screen and (max-width:830px){
      .comp-reg-img{
-      height: 95%;  
+      height: 100%;  
      }
   }
 
@@ -245,7 +248,7 @@ body{
 .content{
   display: flex;
   flex-direction: column;
-  min-height: 150vh;
+  min-height: 200vh;
 }
 
 .main{
@@ -276,6 +279,7 @@ body{
   overflow: hidden;
   outline: 2px solid #1971c2;
   text-wrap: nowrap;
+  margin-bottom: 100px;
 }
 @media screen and (min-width:768px) and (max-width:900px) {
   .update-btn,
@@ -292,10 +296,10 @@ body{
 }
 }
 
-.update-btn.active_btn,
+ 
 .record-btn.active_btn {
-  background-color: #1971c2;
-  color: white;
+  background-color: #1971c2 !important;
+  color: white !important;
 }
 
 .update-btn:hover,
