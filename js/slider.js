@@ -30,6 +30,7 @@ function currentSlide(n) {
 function showSlides() {
   let slides = document.querySelectorAll(".mySlides"); // Get all slides
   let dots = document.querySelectorAll(".dots"); // Get all dots
+  let header = document.querySelector(".main-header"); // Get the header element
 
   // Loop back to the start if index exceeds the number of slides
   if (slideIndex >= slides.length) slideIndex = 0;
@@ -51,7 +52,26 @@ function showSlides() {
 
   // Highlight the current dot
   dots[slideIndex].classList.add("active-dot");
+
+  // Change the header color based on the current slide's data-color attribute, only for mobile view
+  if (window.innerWidth <= 768) {
+    // Check if screen width is 768px or less
+    const newColor = slides[slideIndex].getAttribute("data-color");
+    header.style.backgroundColor = newColor;
+  } else {
+    // Optional: Reset header color when not in mobile view
+    header.style.backgroundColor = ""; // or set to a default color
+  }
 }
+// Event listener for window resize to update header color
+window.addEventListener("resize", showSlides);
+
+// Call showSlides to ensure correct color on initial load
+showSlides();
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 
 // Timer settings

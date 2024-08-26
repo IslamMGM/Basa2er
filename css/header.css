@@ -77,15 +77,15 @@ html {
     z-index: 2;
 }
 
-@media screen and (max-width:767px) {
+/* @media screen and (max-width:767px) {
     .main-header{
         background-color: #092D38;
 
     }
-}
+} */
 
 .main-header.active_header{
-    background-color: #092D38;
+    background-color: #092D38 !important;
     transition: 0.3s;
 }
 
