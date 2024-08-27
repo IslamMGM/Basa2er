@@ -1412,7 +1412,7 @@ margin-bottom: 50px;
   margin: 0 auto;
   margin-top: -40px;
    width: 70%;
-   box-shadow: 0 0 30px 5px #00000012;
+   /* box-shadow: 0 0 30px 5px #00000012; */
   border-radius: 10px 10px 0 0 ;
   /* border: 2px solid #05553d61; */
   margin-top: 70px;
@@ -1430,7 +1430,6 @@ margin-bottom: 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
-  
  }
 
 .mySlides-kid .kid-p-img {
@@ -1438,6 +1437,8 @@ margin-bottom: 50px;
   object-fit: cover;
   transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
   padding: 0;
+  box-shadow: 0 0 30px 5px #00000012;
+  
 }
 
 @media (max-width: 950px) {
