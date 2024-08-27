@@ -27,3 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// sweet alert ////////////
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".info").forEach(function (element) {
+    element.addEventListener("click", function (e) {
+      Swal.fire({
+        title: "إنتظر!",
+        text: "سيتم توفير ملفات التدبر لكل مسار قريباً إن شاء الله",
+        icon: "info",
+        confirmButtonText: "حسناً",
+      });
+    });
+  });
+});
