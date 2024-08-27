@@ -317,10 +317,18 @@
   }
 
 
-
 .icon-margin{
     margin-right: 7px;
 }
 .icon-margin-2{
     margin-right: 3px;
+}
+
+@media (max-width: 726px) {
+    .icon-margin{
+        margin-right: 0;
+    }
+    .icon-margin-2{
+        margin-right: 0;
+    }
 }
