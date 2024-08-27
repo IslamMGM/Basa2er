@@ -54,6 +54,7 @@ body{
     background-color: #444444;
     color: #ffffff;
     margin-top: 30px;
+    line-height: 1.9;
   }
 
   .org{
@@ -71,11 +72,11 @@ body{
   @media screen and (max-width:767px){
 
     .parti-heads{
-      font-size: 14px;
+      font-size: 13px;
      }
   
      .org li{
-       font-size: 14px;
+       font-size: 12px;
        }
     
    }
@@ -169,6 +170,13 @@ body{
     .submit{
           left: 49.2%;
     }
+    .form-label{
+       left: 20px;
+       padding: 10px 14px;
+       text-align: right;
+       font-size: 14px;
+   }
+  
 }
 
 .submit:hover{
@@ -248,7 +256,7 @@ body{
 .content{
   display: flex;
   flex-direction: column;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 .main{
@@ -279,7 +287,7 @@ body{
   overflow: hidden;
   outline: 2px solid #1971c2;
   text-wrap: nowrap;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width:768px) and (max-width:900px) {
   .update-btn,
