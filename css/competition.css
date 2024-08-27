@@ -1278,6 +1278,8 @@ margin-bottom: 50px;
 .sora-img img{
   height: 60%;
   width: 80%;
+  border-radius: 40px 0 40px 0;
+  /* border-radius: 15px; */
 }
 
 
