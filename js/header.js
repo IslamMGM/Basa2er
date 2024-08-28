@@ -142,29 +142,43 @@ document.addEventListener("DOMContentLoaded", function () {
   const mLinks = document.querySelectorAll(".m-links");
   let currentPath = window.location.pathname.split("/").pop(); // Extracts the filename from the URL
 
-  console.log("Current Path before check: ", currentPath);
+  // Remove the extension if it exists
+  currentPath = currentPath.replace(/\.[^/.]+$/, "");
 
-  // If currentPath is empty, set it to 'index.html'
+  console.log("Current Path after removing extension: ", currentPath);
+
+  // If currentPath is empty, set it to 'index'
   if (currentPath === "") {
-    currentPath = "index.html";
+    currentPath = "index";
   }
 
-  console.log("Current Path after check: ", currentPath);
-
   navLinks.forEach((link) => {
-    console.log("Link Href: ", link.getAttribute("href"));
+    // Extract filename without extension from the link href
+    let linkPath = link
+      .getAttribute("href")
+      .split("/")
+      .pop()
+      .replace(/\.[^/.]+$/, "");
+    console.log("Link Href Path after removing extension: ", linkPath);
 
     // Compare the href attribute with the currentPath
-    if (link.getAttribute("href") === currentPath) {
+    if (linkPath === currentPath) {
       link.classList.add("active_navlink");
       console.log("Active class added to: ", link);
     }
   });
+
   mLinks.forEach((link_M) => {
-    console.log("link_M Href: ", link_M.getAttribute("href"));
+    // Extract filename without extension from the link href
+    let linkPath_M = link_M
+      .getAttribute("href")
+      .split("/")
+      .pop()
+      .replace(/\.[^/.]+$/, "");
+    console.log("link_M Href Path after removing extension: ", linkPath_M);
 
     // Compare the href attribute with the currentPath
-    if (link_M.getAttribute("href") === currentPath) {
+    if (linkPath_M === currentPath) {
       link_M.classList.add("active_navlink-m");
       console.log("Active class added to: ", link_M);
     }
