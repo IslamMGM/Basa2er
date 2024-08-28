@@ -14,8 +14,7 @@
 @media screen and (max-width: 767px){
   .landing-container{
       margin-top: 90px;
-      margin-bottom: 130px;
-
+ 
      }
 }
 
@@ -242,6 +241,11 @@ background-color: #ffffffb0;
     border-radius: 10px;
     height: fit-content;
 }
+/* @media screen and (max-width:767px){
+  .comp-def-box{
+    margin-top: 0px;
+}
+} */
 
 .comp-def-info{
     padding: 30px 20px;
