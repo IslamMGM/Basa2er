@@ -619,6 +619,7 @@
     content: "";
     width: 100%;
     height: 100%;
+    top: -17px;
     background-color: #0000001f;
 }
 .women-img-holder::before{
@@ -633,6 +634,8 @@
     content: "";
     width: 100%;
     height: 100%;
+    top: -17px;
+
     background-color: #69db7c1e;
 }
 

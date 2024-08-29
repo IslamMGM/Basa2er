@@ -611,7 +611,7 @@ background-color: #ffffffb0;
     margin-top: 17px;
     margin-bottom: 8px;
     border-radius: 5px;
-    background-color: #1b4d25;
+    background-color: #092D38;
   }
 
   .save-track{
@@ -656,6 +656,46 @@ background-color: #ffffffb0;
     }
     .track{
       margin-right: 8px;
+    }
+  }
+
+  .age-takrem{
+    display: flex;
+    align-items: center;
+  }
+  .takrem{
+    display: inline-block;
+    color: white;
+    background-color: #092D38;
+    margin-bottom: 10px !important;
+    padding: 8px 16px;
+    border-radius: 20px 0 20px 0;
+ 
+  }
+
+  @media screen and (max-width:910px){
+    .age-takrem{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .takrem{
+      margin-top: 5px !important;
+      margin-right: 10px !important;
+     
+    }
+
+    .image-description {
+      height: 485px;
+
+    }
+    .slider-wrapper {
+      margin-bottom: 460px;
+
+      
+    }
+    .swiper-container{
+      height: 750px;
     }
   }
 
