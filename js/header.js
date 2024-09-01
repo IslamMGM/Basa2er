@@ -197,3 +197,32 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active_header");
   }
 });
+
+// //////////////////////////////
+// Function to handle scrolling and removing hash
+function handleHash() {
+  if (window.location.hash === "#fro3-link") {
+    // Scroll to the element with the ID 'fro3-link'
+    const element = document.getElementById("fro3-link");
+    if (element) {
+      // Use a timeout to allow the default browser behavior
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth" });
+
+        // Remove the hash from the URL without reloading the page
+        history.replaceState(
+          null,
+          "",
+          window.location.pathname + window.location.search
+        );
+      }, 10); // Small delay to ensure the browser scrolls first
+    }
+  }
+}
+
+// Run the function on page load
+window.addEventListener("load", handleHash);
+
+// Listen for hash changes (in case the user navigates within the page)
+window.addEventListener("hashchange", handleHash);
+// /////////////////////////////
