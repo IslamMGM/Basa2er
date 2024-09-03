@@ -93,8 +93,15 @@ body {
      overflow: hidden;
     animation: l5-0 2s infinite linear;
     margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 150px !important;
+    margin-bottom: 100px !important;
+  }
+
+  @media screen and (max-width:767px) {
+    .loader{
+      margin-top: 300px !important;
+     }
+  
   }
   .loader::before,
   .loader::after {
@@ -144,9 +151,8 @@ body {
 
 .record-link-box{
 text-align: right;
-margin-top: -20px;
-margin-bottom: 50px;
-}
+margin-top: -50px;
+ }
 
 .record-link {
   text-decoration: none;
