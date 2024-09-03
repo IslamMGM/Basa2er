@@ -62,7 +62,7 @@ body {
 .wrapper-2{
   position: absolute;
   left: 50% ;
-  top: 43% ;
+  top: 50% ;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
    text-align: center;
@@ -93,7 +93,8 @@ body {
      overflow: hidden;
     animation: l5-0 2s infinite linear;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .loader::before,
   .loader::after {
@@ -132,3 +133,69 @@ body {
     10%,70%  {background-size:100% 205%,var(--s,0) 100%}
     70%,100% {background-position: top,center}
   }
+
+
+
+.record-box{
+  margin-top: 20px ;
+  direction: rtl;
+
+}
+
+.record-link-box{
+text-align: right;
+margin-top: -20px;
+margin-bottom: 50px;
+}
+
+.record-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: #8592EA;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 12px 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #8592EA;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.record-link:hover {
+  background-color: #606aac;
+}
+
+.record-link:hover .button__icon-wrapper {
+  color: #606aac;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.record-link:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.record-link:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}

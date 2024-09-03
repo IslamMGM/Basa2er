@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SFE7FFG9V4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SFE7FFG9V4");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -28,9 +42,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- -------------------- -->
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/competition.css?v=2.0" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css?v=1.0" />
+    <link rel="stylesheet" href="css/competition.css?v=1.2" />
+    <link rel="stylesheet" href="css/footer.css?v=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <!-- //// -->
     <meta
@@ -117,10 +131,10 @@
     <!-- start landing section -->
     <!-- <div class="landing-container">
       <div class="mySlides animate" data-color="#072C38">
-        <img class="cover-img" src="img/img4.jpg" alt="" />
+        <img class="cover-img" src="img/comp-img-1.jpeg" alt="1" />
       </div>
       <div class="mySlides animate">
-        <img class="cover-img" src="" alt="2" />
+        <img class="cover-img" src="img/comp-img-2.jpeg" alt="2" />
       </div>
       <a class="prev" onclick="prevSlide()">&#10094;</a>
       <a class="next" onclick="nextSlide()">&#10095;</a>
@@ -133,7 +147,7 @@
         <a class="next-mobile" onclick="nextSlide()"
           ><i class="fa-solid fa-arrow-right-long"></i
         ></a>
-       </div>
+      </div>
     </div> -->
 
     <!-- end landing section -->
@@ -1010,16 +1024,16 @@
     </div>
 
     <!-- end comp level -->
-    <script src="js/header.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/count.js"></script>
+    <script src="js/header.js?v=1.0"></script>
+    <script src="js/slider.js?v=1.0"></script>
+    <script src="js/count.js?v=1.0"></script>
     <!-- Linking SwiperJS script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ----------------------- -->
-    <script src="js/comp-level-swiper.js"></script>
-    <script src="js/comp.js"></script>
-    <script src="js/tadbr.js"></script>
-    <script src="js/kid-party.js"></script>
+    <script src="js/comp-level-swiper.js?v=1.0"></script>
+    <script src="js/comp.js?v=1.0"></script>
+    <script src="js/tadbr.js?v=1.0"></script>
+    <script src="js/kid-party.js?v=1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
