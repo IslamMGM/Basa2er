@@ -22,7 +22,7 @@
 }
 
 .mySlides{
-    /* display: none; */
+    display: none;
 
     position: relative;
     overflow: hidden;
