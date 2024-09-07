@@ -153,6 +153,10 @@
     transition-duration: 0.3s;
 }
 
+.sec1 .social .telegram:hover{
+    background-color: #24A1DE;
+    color: white;
+}
 .sec1 .social .facebook:hover{
     background-color: #1877f2;
     color: white;
@@ -185,6 +189,11 @@
 
 .footer-links{
     margin-right: 12%;
+}
+@media screen and (max-width: 1100px) {
+    .footer-links{
+        margin-right: 25%;
+    }
 }
 
 .footer-links li{
