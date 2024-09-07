@@ -1458,11 +1458,11 @@ margin-bottom: 50px;
 .kid-img-head{
   position: relative;
   width: fit-content;
-   margin-bottom: 45px;
+   margin-bottom: -30px !important;
   font-size: 17px;
   color: #06543c;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .kid-img-head::before{
   position: absolute;
@@ -1494,11 +1494,9 @@ margin-bottom: 50px;
   margin: 0 auto;
   margin-top: -40px;
    width: 70%;
-   /* box-shadow: 0 0 30px 5px #00000012; */
+   box-shadow: 0 0 30px 5px #00000012;
   border-radius: 10px 10px 0 0 ;
-  /* border: 2px solid #05553d61; */
   margin-top: 70px;
-
 }
 
 @media screen and (max-width: 767px) {
@@ -1512,6 +1510,8 @@ margin-bottom: 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
+
+  
  }
 
 .mySlides-kid .kid-p-img {
@@ -1520,7 +1520,7 @@ margin-bottom: 50px;
   transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
   padding: 0;
   box-shadow: 0 0 30px 5px #00000012;
-  
+
 }
 
 @media (max-width: 950px) {
@@ -1587,10 +1587,12 @@ margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   padding: 30px 0;
-  background-color: #f3f3f3aa;
+  /* background-color: #f3f3f3aa; */
   z-index: 5;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 70px;
+  
 }
 @media screen and (max-width: 767px) {
   .dots-container-kid {
