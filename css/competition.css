@@ -1529,7 +1529,7 @@ margin-bottom: 50px;
 
 @media (max-width: 950px) {
   .kid-p-img {
-    transform: scale(1.2);
+    transform: scale(1) !important;
     padding: 2%;
   }
 }
