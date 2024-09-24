@@ -1688,3 +1688,327 @@ margin-bottom: 50px;
 /* // */
 /* // */
 
+
+
+/* start events style */
+
+.events {
+  margin: 70px auto;
+}
+.events .container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.events-videos-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  width: 100%; /* Ensure it uses available space but respects max-width */
+  padding: 20px; /* Optional: add some padding for spacing */
+  max-width: 1200px; /* or any width you prefer */
+  margin: 0 auto;
+}
+
+.events-videos-box iframe {
+  height: 200px;
+  border-radius: 5px;
+  /* display: none; */
+}
+
+/* Media query to handle smaller screens */
+@media (max-width: 1144px) {
+  /* Adjust the value as needed */
+  .events-videos-box {
+    grid-template-columns: 1fr 1fr; /* Force 2 columns on smaller screens */
+  }
+
+  /* Center the third div in the second row */
+  .events-videos-box > div:nth-child(3) {
+    grid-column: span 2; /* Span across two columns to center */
+    justify-self: center; /* Center within the spanned columns */
+  }
+}
+@media (max-width: 767px) {
+  /* Adjust the value as needed */
+  .events-videos-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.video-container {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.video-thumbnail img {
+  position: relative;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.video-thumbnail {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-thumbnail::before{
+  position: absolute;
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff; 
+  background-color: #092d3880;
+  padding: 18px 21px;
+  border-radius: 1000px;
+  z-index: 1;
+  pointer-events: none;
+  transition: all 200ms ease-in;
+ }
+  
+ .video-thumbnail:hover::before{
+   
+   transition: all 200ms ease-in;
+   transform: scale(1.1);
+  }
+
+/* Fade-out animation */
+.fade-out {
+  animation: fadeOut 0.3s forwards; /* Animation duration and forwards to retain final state */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+/* end events style */
+
+/* start com-partner style */
+
+.partner-container .container{
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.part-img-container {
+  width: 250px;
+  height: 350px;
+}
+
+.partner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partner-img{
+ margin-bottom: 15px;
+}
+
+
+.landing-container-partner {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+    width: 50%;
+    height: 400px;
+   box-shadow: 0 0 30px 5px #00000012;
+  border-radius: 10px 10px 0 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+@media screen and (max-width: 767px) {
+  .landing-container-kid {
+    width: 100%;
+  }
+}
+
+.mySlides-partner {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  
+ }
+
+.mySlides-partner .kid-p-img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+  padding: 0;
+  box-shadow: 0 0 30px 5px #00000012;
+
+}
+
+@media (max-width: 950px) {
+  .kid-p-img {
+    transform: scale(1.2);
+    padding: 2%;
+  }
+}
+
+.prev-partner,
+.next-partner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #104E70;
+  font-size: 33px;
+  padding: 12px;
+  /* background: #0000001b; */
+  user-select: none;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.prev-partner:hover {
+  background: #104e7017;
+}
+.next-partner:hover {
+  background: #104e7017;
+}
+
+.prev-partner {
+  border-radius: 0 5px 5px 0;
+  left: -60px;
+}
+.next-partner {
+  border-radius: 5px 0 0 5px;
+  right: -60px;
+}
+
+.landing-container-partner:hover .prev-partner {
+  left: 0px;
+}
+.landing-container-partner:hover .next-partner {
+  right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .prev-partner,
+  .next-partner {
+    display: none;
+  }
+  
+  .prev-partner:hover {
+    background: transparent;
+  }
+  .next-partner:hover {
+    background: transparent;
+  }
+}
+
+.dots-container-partner {
+ 
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 0;
+   z-index: 5;
+}
+@media screen and (max-width: 767px) {
+  .dots-container-partner {
+    width: 100%;
+   }
+}
+
+.prev-mobile,
+.next-mobile{
+    display: none;
+    font-size: 20px;
+    color: #6f6f6f;
+    border: 2px solid #4c4c4c;
+    padding: 5px 7px;
+    padding-top: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px){
+    .prev-mobile,
+    .next-mobile{
+        display: block;
+        position: absolute;
+    }
+}
+.prev-mobile{
+    margin-right: 10px;
+    left: 0;
+}
+.next-mobile{
+    margin-left: 10px;
+    right: 0;
+
+}
+
+.dots-partner {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #104E705f;
+  backdrop-filter: blur(2px);
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dots-partner:hover {
+  background-color: #104E70c2;
+}
+
+.active-dot-partner {
+  background-color: #104E70c2 !important;
+  width: 20px !important;
+  border-radius: 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .dots-container-partner {
+    padding: 15px 0;
+  }
+  .dots-partner {
+    height: 8px;
+    width: 8px;
+  }
+  .active-dot-partner {
+    width: 15px !important;
+  }
+}
+
+.animate-partner {
+  -webkit-animation-name: animate-kid;
+  -webkit-animation-duration: 0.3s;
+  animation-name: animate-partner;
+  animation-duration: 2s;
+}
+
+@keyframes animate-partner {
+  from {
+    transform: scale(1.05) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+/* end com-partner style */

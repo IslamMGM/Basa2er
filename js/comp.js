@@ -40,3 +40,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Select all thumbnail images
+const thumbnails = document.querySelectorAll(".video-thumbnail");
+
+thumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    const videoContainer = thumbnail.closest(".video-container");
+    const videoFrame = videoContainer.querySelector("iframe");
+
+    // Add the fade-out class to trigger the animation
+    thumbnail.classList.add("fade-out");
+
+    // Wait for the animation to finish before hiding the thumbnail
+    thumbnail.addEventListener("animationend", () => {
+      thumbnail.style.display = "none"; // Hide thumbnail
+      videoFrame.style.display = "block"; // Show video
+    });
+  });
+});
