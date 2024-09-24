@@ -708,8 +708,12 @@ background-color: #ffffffb0;
   direction: rtl;
 }
 
-ol, ul {
+.participate-way-box  ol{
   margin-right: 20px; 
+}
+.participate-way-box ul{
+  margin-right: 20px; 
+
 }
 
 ol li ul, ol li ol {
