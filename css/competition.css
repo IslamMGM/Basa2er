@@ -1447,8 +1447,7 @@ margin-bottom: 50px;
 
 .kid-party-box{
   direction: rtl;
-  margin-bottom: 100px;
- }
+  }
 
 .tr-strong-kid{
   font-size: 18px;
@@ -1466,8 +1465,7 @@ margin-bottom: 50px;
   font-size: 17px;
   color: #06543c;
   margin: 0 auto;
-  margin-top: 100px;
-}
+ }
 .kid-img-head::before{
   position: absolute;
   content: "";
