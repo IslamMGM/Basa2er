@@ -1812,13 +1812,13 @@ margin-bottom: 50px;
  }
 
  .flex-partner-item1 {
-  width: 35%;
-   
+  width: 32%;
+   text-align: left;
  
 }
  .flex-partner-item2 {
   width: 45%;
-  
+  text-align: right;
    
 }
 @media screen and (max-width: 900px) {
