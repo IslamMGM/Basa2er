@@ -2269,6 +2269,11 @@ margin-bottom: 50px;
 /* end com-partner style */
 
 /* start com-score style */
+
+.comp-score{
+  margin-top: 170px;
+}
+
 .end-cont{
   display: flex;
   box-shadow: 0px 0px 30px 10px #00000010;
