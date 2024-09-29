@@ -2003,7 +2003,7 @@ margin-bottom: 50px;
   justify-content: center;
  flex-wrap: wrap;
  margin-top: 70px;
- margin-bottom: 70px;
+ margin-bottom: 150px;
 }
 .part-img-container {
   width: 250px;
@@ -2267,3 +2267,225 @@ margin-bottom: 50px;
 }
 
 /* end com-partner style */
+
+/* start com-score style */
+.end-cont{
+  display: flex;
+  box-shadow: 0px 0px 30px 10px #00000010;
+   justify-content: space-between;
+  overflow: hidden;
+  border-radius: 7px;
+  margin-bottom: 70px;
+
+}
+@media screen and (max-width:1445px) {
+  .end-cont{
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 20px;
+  }
+  .end-img-cont{
+  text-align: right;
+  width: 100%;
+  }
+  .end-img{
+    height: 100%;
+    /* margin-right: -25px; */
+    width: 107%;
+    margin-top: -20px;
+  }
+}
+
+
+
+.end-img{
+  height: 100%;
+  margin-left: -25px;
+}
+
+.end-text{
+  direction: rtl;
+  margin-top: 30px;
+  padding-left: 40px;
+ 
+
+ }
+
+.end-text h1:first-child{
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+  background-color: #a1766f;
+  padding: 12px 20px;
+  border-radius: 5px;
+  line-height: 1.7;
+  width: fit-content;
+ }
+
+ .second-h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #014948;
+   line-height: 1.7;
+  width: fit-content;
+ }
+
+.end-text p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 2;
+  color: #043b3d;
+ }
+ .end-text h2{
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #055559;
+  line-height: 1.7;
+
+ }
+
+ .second-h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #114C6C !important;
+   line-height: 1.7;
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  text-align: center;
+ }
+ /* .second-h2::before{
+  position: absolute;
+  content: "\f071";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #d32525;
+  background-color: #3dbff750;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  } */
+
+
+ .score-link-cont{
+  display: flex;
+  justify-content:center;
+   margin: 30px 0;
+ }
+
+
+ @media screen and (max-width:767px) {
+  .end-cont{
+    width: 90%;
+  
+  }
+  .end-text{
+    padding-left: 0;
+   }
+  .end-img{
+    height: 100% !important;
+    margin-left: -21px !important;
+    width: 114% !important;
+  }
+  .end-text h1{
+    font-size: 17px !important;
+   }
+  .end-text p{
+    font-size: 15px !important;
+   }
+   .end-text h2{
+    font-size: 16px !important;
+   }
+   .guide-cont h4{
+    font-size: 14px !important;
+     }
+   .tele-cont h4{
+    font-size: 14px !important ;
+      }
+
+
+
+
+
+ }
+
+ @media screen and (max-width:407px) {
+  .end-img{
+    height: 100%;
+    margin-left: -36px;
+    width: 120%;
+  }
+}
+ @media screen and (max-width:370px) {
+  .end-img{
+     margin-left: -19px;
+    width: 124%;
+  }
+}
+
+.score-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: #145E81;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 12px 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s;
+}
+
+.score__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #145E81;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.score-link:hover {
+  background-color: #104963;
+}
+
+.score-link:hover .score__icon-wrapper {
+  color: #145E81;
+}
+
+.score__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.score-link:hover .score__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.score-link:hover .score__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
+
+/* end com-score style */
