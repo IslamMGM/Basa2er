@@ -8,7 +8,7 @@ let TrandingSlider = new Swiper(".img-event-slider", {
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 319,
+    depth: 317.5,
     modifier: 2.5,
   },
   pagination: {
