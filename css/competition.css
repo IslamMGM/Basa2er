@@ -235,7 +235,7 @@ background-color: #ffffffb0;
     gap: 5px;
     margin-top: 70px;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 40px 10px #b0848423;
+    box-shadow: 0 0 20px 20px #104e7010;
     border-radius: 10px;
     height: fit-content;
 }
@@ -345,7 +345,7 @@ background-color: #ffffffb0;
         flex-direction: row;
         gap: 5px;
         margin-bottom: 100px;
-        box-shadow: 0px 0px 40px 10px #b0848423;
+        box-shadow: 0 0 20px 20px #104e7010;
         border-radius: 10px;
         height: fit-content;
 }
@@ -454,6 +454,7 @@ background-color: #ffffffb0;
     margin-bottom: 50px;
     padding: 0 60px;
     position: relative;
+    box-shadow: 0 0 20px 20px #104e7010;
 
 }
 
