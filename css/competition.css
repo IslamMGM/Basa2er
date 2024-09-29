@@ -1758,12 +1758,12 @@ margin-bottom: 50px;
 }
 @media (max-width:500px) {
   .event-slide {
-    width: 90% !important;
-    height: 430px !important;
+    width: 88% !important;
+    height: 440px !important;
   }
   .event-slide .event-slide-img img {
-    width: 90% !important;
-    height: 430px !important;
+    width: 88% !important;
+    height: 440px !important;
   }
 }
 @media (max-width:430px) {
