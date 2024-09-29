@@ -501,3 +501,20 @@ input[type]:checked ~ span.mid {
     opacity: 1;
     visibility: visible;
   }
+
+
+  @media screen and (max-width:767px){
+    #to-top {
+ 
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+ 
+      }
+      #to-top::after {
+          font-size: 1.2em;
+        line-height: 37px;
+ 
+      }
+  }
