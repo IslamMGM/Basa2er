@@ -72,6 +72,38 @@
 }
 .form-label-score{
     text-align: center;
-    top: 42px;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
+
+
+.st-img-reg-container{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: -100px;
+    text-align: center;
+}
+.st-img-reg-container img{
+    width: fit-content;
+    height: fit-content;
+}
+ 
+
+@media screen and (max-width:767px) {
+    .st-img-reg-container{
+        width: 100%;
+ 
+    }
+    .st-img-reg-container img{
+        width: 300px;
+        height: 225px;
+    }
+}
+
+.crop-submit{
+    clip-path: inset(0 0 15% 0) !important;
+ }
+
+ 
