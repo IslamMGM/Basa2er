@@ -2525,9 +2525,17 @@ margin-bottom: 50px;
     background: #ffd300;
     top: 0;
     opacity: 0;
+    animation: makeItRain 15000ms infinite ease-out; /* Increased duration */
+
 }
 .confetti-piece:nth-child(1) {
     left: 11%;
+    /* // */
+    transform: rotate(-40deg); /* Standard */
+    animation: makeItRain 1000ms infinite ease-out;
+    animation-delay: 182ms;
+    animation-duration: 1116ms;
+    /* // */
     -webkit-transform: rotate(-40deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 182ms;
@@ -2535,6 +2543,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(2) {
     left: 14%;
+    /* // */
+    transform: rotate(4deg); /* Standard */
+    animation: makeItRain 1000ms infinite ease-out;
+    animation-delay:  161ms;
+    animation-duration:  1076ms;
+    /* // */
     -webkit-transform: rotate(4deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 161ms;
@@ -2542,6 +2556,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(3) {
     left: 17%;
+        /* // */
+        transform: rotate(-51deg); /* Standard */
+        animation: makeItRain 1000ms infinite ease-out;
+        animation-delay:  481ms;
+        animation-duration:  1103ms;
+        /* // */
     -webkit-transform: rotate(-51deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 481ms;
@@ -2549,6 +2569,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(4) {
     left: 19%;
+            /* // */
+            transform: rotate(61deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  334ms;
+            animation-duration: 708ms;
+            /* // */
     -webkit-transform: rotate(61deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 334ms;
@@ -2556,6 +2582,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(5) {
     left: 23%;
+            /* // */
+            transform: rotate(-52deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  302ms;
+            animation-duration:  776ms;
+            /* // */
     -webkit-transform: rotate(-52deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 302ms;
@@ -2563,6 +2595,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(6) {
     left: 27%;
+            /* // */
+            transform: rotate(38deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  180ms;
+            animation-duration: 1168ms ;
+            /* // */
     -webkit-transform: rotate(38deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 180ms;
@@ -2570,6 +2608,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(7) {
     left: 30%;
+            /* // */
+            transform: rotate(11deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  395ms;
+            animation-duration: 1200ms;
+             /* // */
     -webkit-transform: rotate(11deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 395ms;
@@ -2577,6 +2621,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(8) {
     left: 33%;
+            /* // */
+            transform: rotate(49deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  14ms;
+            animation-duration: 887ms ;
+            /* // */
     -webkit-transform: rotate(49deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 14ms;
@@ -2584,6 +2634,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(9) {
     left: 36%;
+            /* // */
+            transform: rotate(-72deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  149ms;
+            animation-duration:  805ms;
+            /* // */
     -webkit-transform: rotate(-72deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 149ms;
@@ -2591,6 +2647,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(10) {
     left: 39%;
+            /* // */
+            transform: rotate(10deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  351ms;
+            animation-duration:  1059ms;
+            /* // */
     -webkit-transform: rotate(10deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 351ms;
@@ -2598,6 +2660,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(11) {
     left: 42%;
+            /* // */
+            transform: rotate(4deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  307ms;
+            animation-duration:  1132ms;
+            /* // */
     -webkit-transform: rotate(4deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 307ms;
@@ -2605,6 +2673,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(12) {
     left: 44%;
+            /* // */
+            transform: rotate(42deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  464ms;
+            animation-duration:  776ms;
+            /* // */
     -webkit-transform: rotate(42deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 464ms;
@@ -2612,6 +2686,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(13) {
     left: 47%;
+            /* // */
+            transform: rotate(-72deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay: 429ms ;
+            animation-duration:  818ms;
+            /* // */
     -webkit-transform: rotate(-72deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 429ms;
@@ -2619,6 +2699,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(14) {
     left: 48%;
+            /* // */
+            transform: rotate(-40deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  182ms;
+            animation-duration:  1116ms;
+            /* // */
     -webkit-transform: rotate(-40deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 182ms;
@@ -2626,6 +2712,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(15) {
     left: 51%;
+            /* // */
+            transform: rotate(4deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  161ms;
+            animation-duration:  1076ms;
+            /* // */
     -webkit-transform: rotate(4deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 161ms;
@@ -2633,6 +2725,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(16) {
     left: 55%;
+            /* // */
+            transform: rotate(-51deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  481ms;
+            animation-duration:  1103ms;
+            /* // */
     -webkit-transform: rotate(-51deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 481ms;
@@ -2640,6 +2738,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(17) {
     left: 58%;
+            /* // */
+            transform: rotate(61deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay: 334ms ;
+            animation-duration:  708ms;
+            /* // */
     -webkit-transform: rotate(61deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 334ms;
@@ -2647,6 +2751,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(18) {
     left: 62%;
+            /* // */
+            transform: rotate(-52deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  302ms;
+            animation-duration:  776ms;
+            /* // */
     -webkit-transform: rotate(-52deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 302ms;
@@ -2654,6 +2764,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(19) {
     left: 65%;
+            /* // */
+            transform: rotate(38deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay: 180ms ;
+            animation-duration:  1168ms;
+            /* // */
     -webkit-transform: rotate(38deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 180ms;
@@ -2661,13 +2777,25 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(20) {
     left: 68%;
+            /* // */
+            transform: rotate(11deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  395ms;
+            animation-duration:  1200ms;
+            /* // */
     -webkit-transform: rotate(11deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 395ms;
     -webkit-animation-duration: 1200ms;
 }
-.confetti-piece:nth-child(12) {
+.confetti-piece:nth-child(21) {
     left: 70%;
+            /* // */
+            transform: rotate(49deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  14ms;
+            animation-duration:  887ms;
+            /* // */
     -webkit-transform: rotate(49deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 14ms;
@@ -2675,6 +2803,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(22) {
     left: 73%;
+            /* // */
+            transform: rotate(-72deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  149ms;
+            animation-duration:  805ms;
+            /* // */
     -webkit-transform: rotate(-72deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 149ms;
@@ -2682,6 +2816,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(23) {
     left: 76%;
+            /* // */
+            transform: rotate(10deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  351ms;
+            animation-duration:  1059ms;
+            /* // */
     -webkit-transform: rotate(10deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 351ms;
@@ -2689,6 +2829,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(24) {
     left: 77%;
+            /* // */
+            transform: rotate(4deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  307ms;
+            animation-duration: 1132ms ;
+            /* // */
     -webkit-transform: rotate(4deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 307ms;
@@ -2696,6 +2842,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(25) {
     left: 82%;
+            /* // */
+            transform: rotate(42deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  464ms;
+            animation-duration: 776ms ;
+            /* // */
     -webkit-transform: rotate(42deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 464ms;
@@ -2703,6 +2855,12 @@ margin-bottom: 50px;
 }
 .confetti-piece:nth-child(26) {
     left: 92%;
+            /* // */
+            transform: rotate(-72deg); /* Standard */
+            animation: makeItRain 1000ms infinite ease-out;
+            animation-delay:  429ms;
+            animation-duration:  818ms;
+            /* // */
     -webkit-transform: rotate(-72deg);
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 429ms;
@@ -2719,6 +2877,7 @@ margin-bottom: 50px;
 .confetti-piece:nth-child(4n) {
     width: 5px;
     height:7px;
+    animation-duration: 2000ms;
     -webkit-animation-duration: 2000ms;
     z-index: 1;
 
@@ -2726,6 +2885,8 @@ margin-bottom: 50px;
 .confetti-piece:nth-child(3n) {
     width: 3px;
     height: 6px;
+    animation-duration: 2500ms;
+     animation-delay: 1000ms;
     -webkit-animation-duration: 2500ms;
     -webkit-animation-delay: 1000ms;
     z-index: 1;
@@ -2734,10 +2895,16 @@ margin-bottom: 50px;
 .confetti-piece:nth-child(4n-7) {
   background: red;
 }
+/* Standard */
+@keyframes makeItRain {
+  from {opacity: 0;}
+  50% {opacity: 1;}
+  to {transform: translateY(500px);}
+}
 @-webkit-keyframes makeItRain {
     from {opacity: 0;}
     50% {opacity: 1;}
-    to {-webkit-transform: translateY(200px);}
+    to {-webkit-transform: translateY(500px);}
 }
 
 
