@@ -3248,7 +3248,6 @@ margin-bottom: 50px;
    border: 1px solid rgba( 255, 255, 255, 0.18 );
    min-width: 150px !important;
 }
- 
 
 
 .mobile-arrow-container{
@@ -3368,7 +3367,7 @@ margin-bottom: 50px;
   height: 650px;
   /* object-fit:   cover; */
   border: 5px solid #019FA0;
-   border-radius: 15px;
+   border-radius: 15px 15px 0 0;
 }
 @media screen and (max-width:1130px){
   .slider_party .list_party .item_party{
@@ -3552,65 +3551,108 @@ margin-bottom: 50px;
 
 /* nextPrevArrows Section  */
 .nextPrevArrows_party{
-  position: absolute;
-  bottom: 2%;
-  left:  37%;
-  z-index: 100;
-  width: 100px !important;
+  position: relative;
+    z-index: 1;
+  width: 780px;
    display: flex;
+   justify-content: center;
+   align-items: center;
   gap: 10px;
+  margin: 0 auto !important;
+  margin-top: 40px !important;
+}
+
+.nextPrevArrows_party button{
+  display: flex;
+  justify-content: center;
   align-items: center;
+width: 49% !important;
+height: 40px;
+border-radius: 0 0 5px 5px ;
+font-size: 25px;
 }
 
 
-.nextPrevArrows_party button{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #124ca1cb;
+.nextPrevArrows_party  .prev_party{
+  position: absolute;
+ 
+  left: 0 !important;
+   background-color: #009F9F;
   border: none;
-  color: #fff;
+  color: #f2f6ff;
   font-family: monospace;
   font-weight: bold;
   transition: .5s;
   cursor: pointer;
 }
-@media screen and (min-width:600px) and (max-width:700px) {
+.nextPrevArrows_party .next_party{
+  position: absolute;
+  right: 0 !important;
+   background-color: #009F9F;
+  border: none;
+  color: #f2f6ff;
+  font-family: monospace;
+  font-weight: bold;
+  transition: .5s;
+  cursor: pointer;
+}
+@media screen and (max-width:1130px){
   .nextPrevArrows_party{
-      left:  36% ;
+    width: 600px;
+    margin-top: 20px !important;
 
   }
   .nextPrevArrows_party button{
-      width: 30px;
-      height: 30px;
-
+     width: 49% !important;
+  height: 40px;
+   font-size: 25px;
   }
+ 
 }
-@media screen and  (min-width:450px) and (max-width:600px) {
+@media screen and (max-width:767px) {
   .nextPrevArrows_party{
-      left:  35% !important;
+    width: 500px;
+    margin-top: 27px !important;
 
   }
   .nextPrevArrows_party button{
-      width: 25px;
-      height: 25px;
-
-  }
+    width: 49% !important;
+ height: 40px;
+  font-size: 25px;
+ }
+ 
 
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:560px)  {
   .nextPrevArrows_party{
-      left:  34%  ;
+    width: 400px;
+    margin-top: 43px !important;
 
   }
   .nextPrevArrows_party button{
-      width: 20px;
-      height: 20px;
+    width: 49% !important;
+ height: 40px;
+  font-size: 20px;
+ }
+ 
+}
+@media screen and (max-width:460px) {
+  .nextPrevArrows_party{
+    width: 300px;
+    margin-top: 60px !important;
 
   }
+  .nextPrevArrows_party button{
+    width: 49% !important;
+ height: 40px;
+  font-size: 17px;
+ }
+ 
 }
+
+
 .nextPrevArrows_party button:hover{
-  background-color: #0b2f64cb;
+  background-color: #007e7e;
 }
 
 /* Animation Part */
@@ -3679,7 +3721,7 @@ margin-bottom: 50px;
   animation: showThumbnail .5s linear 1 forwards;
 }
 .slider_party.prev_party .list_party .item_party img{
-  z-index: 100;
+  z-index: 1;
 }
 
 
@@ -3705,7 +3747,7 @@ margin-bottom: 50px;
 
 /* Animation for prev button click */
 .slider_party.prev_party .list_party .item_party:nth-child(2){
-  z-index: 2;
+  z-index: 1;
 }
 
 .slider_party.prev_party .list_party .item_party:nth-child(2) img{
