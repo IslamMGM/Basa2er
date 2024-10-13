@@ -233,8 +233,7 @@ background-color: #ffffffb0;
     display: inline-flex;
     flex-direction: row;
     gap: 5px;
-    margin-top: 70px;
-    margin-bottom: 100px;
+     margin-bottom: 100px;
     box-shadow: 0 0 20px 20px #104e7010;
     border-radius: 10px;
     height: fit-content;
@@ -561,7 +560,7 @@ background-color: #ffffffb0;
 
   .image-description {
     position: absolute;
-    top: 242px;
+    top: 217px;
     right: 50%;
     transform: translateX(50%);
     display: none;
@@ -3336,3 +3335,402 @@ margin-bottom: 50px;
   }
 }
 /* end tadbr-firsts */
+
+
+/* start final party  */
+
+/* slider section  */
+
+.slider_party{
+  height: 700px;
+  margin-top: -50px;
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+  margin: 0 auto;
+
+}
+.slider_party .list_party .item_party{
+  width: 780px;
+  height: 650px;
+  position: absolute;
+  inset: 0 0 0 0;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.slider_party .list_party .item_party img{
+  width: 780px;
+  height: 650px;
+  /* object-fit:   cover; */
+  border: 5px solid #019FA0;
+   border-radius: 15px;
+}
+@media screen and (max-width:1130px){
+  .slider_party .list_party .item_party{
+    width: 600px;
+    height: 500px;
+
+}
+.slider_party .list_party .item_party img{
+    width: 600px;
+    height: 500px;
+
+ }
+}
+
+/* @media screen and (max-width:700px) {
+  .slider_party .list_party .item_party{
+      width: 500px;
+      height: 608px;
+
+  }
+  .slider_party .list_party .item_party img{
+      width: 500px;
+      height: 608px;
+
+   }
+} */
+@media screen and (max-width:767px) {
+  .slider_party .list_party .item_party{
+      width: 500px;
+      height: 417px;
+
+  }
+  .slider_party .list_party .item_party img{
+    width: 500px;
+    height: 417px;
+
+   }
+}
+@media screen and (max-width:560px) {
+  .slider_party .list_party .item_party{
+      width: 400px;
+      height: 333px;
+
+  }
+  .slider_party .list_party .item_party img{
+    width: 400px;
+    height: 333px;
+
+   }
+}
+@media screen and (max-width:460px) {
+  .slider_party .list_party .item_party{
+      width: 300px;
+      height: 250px;
+
+  }
+  .slider_party .list_party .item_party img{
+    width: 300px;
+    height: 250px;
+   }
+}
+
+
+
+/* Thumbnail Section  */
+.thumbnail_party{
+  position: absolute;
+  bottom: 40px;
+  left: 60%;
+  width: max-content;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  width: 450px;
+  overflow: hidden;
+  
+   -webkit-mask-image: linear-gradient(to right, #000000 85%, #00000000);
+  mask-image: linear-gradient(to right, #000000 85%, #00000000);
+}
+
+.thumbnail_party .item_party{
+  width: 120px;
+  height: 170px;
+  flex-shrink: 0;
+  position: relative;
+  
+}
+
+.thumbnail_party .item_party img{
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #019FA0;
+}
+
+@media screen and (max-width:1130px){
+  .thumbnail_party{
+    bottom: 180px;
+    width: 300px;
+    left: 60%;
+
+}
+.thumbnail_party .item_party{
+    width: 120px;
+    height: 170px;
+
+}
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .thumbnail_party{
+    bottom: 180px  ;
+    width: 250px  ;
+    left: 60%  ;
+
+}
+.thumbnail_party .item_party{
+    width: 120px ;
+    height: 170px  ;
+
+}
+}
+@media screen and   (max-width:767px) {
+  .thumbnail_party{
+    bottom: 100px;
+    width: 50%;
+    left: 30%;
+    transform: translateX(10%);
+}
+
+
+.thumbnail_party .item_party{
+    width: 110px;
+    height: 92px;
+
+}
+}
+@media screen and (max-width:560px) {
+  .thumbnail_party{
+    bottom: 180px;
+    width: 50%;
+    left: 40%;
+    transform: translateX(10%);
+  }
+  .thumbnail_party .item_party{
+    width: 110px;
+    height: 92px;
+
+  }
+}
+@media screen and (max-width:460px){
+  .thumbnail_party{
+    bottom: 260px;
+    width: 60%;
+    left: 30%;
+    transform: translateX(-10%);
+  }
+  .thumbnail_party .item_party{
+    width: 110px;
+    height: 92px;
+  }
+}
+
+
+/* nextPrevArrows Section  */
+.nextPrevArrows_party{
+  position: absolute;
+  bottom: 2%;
+  left:  37%;
+  z-index: 100;
+  width: 100px !important;
+   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.nextPrevArrows_party button{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #124ca1cb;
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  transition: .5s;
+  cursor: pointer;
+}
+@media screen and (min-width:600px) and (max-width:700px) {
+  .nextPrevArrows_party{
+      left:  36% ;
+
+  }
+  .nextPrevArrows_party button{
+      width: 30px;
+      height: 30px;
+
+  }
+}
+@media screen and  (min-width:450px) and (max-width:600px) {
+  .nextPrevArrows_party{
+      left:  35% !important;
+
+  }
+  .nextPrevArrows_party button{
+      width: 25px;
+      height: 25px;
+
+  }
+
+}
+@media screen and (max-width:450px) {
+  .nextPrevArrows_party{
+      left:  34%  ;
+
+  }
+  .nextPrevArrows_party button{
+      width: 20px;
+      height: 20px;
+
+  }
+}
+.nextPrevArrows_party button:hover{
+  background-color: #0b2f64cb;
+}
+
+/* Animation Part */
+.slider_party .list_party .item_party:nth-child(1){
+  z-index: 1;
+}
+
+
+/* animation text in first item */
+/* .slider_party .list_party .item_party:nth-child(1) .content .title,
+.slider_party .list_party .item_party:nth-child(1) .content .type,
+.slider_party .list_party .item_party:nth-child(1) .content .description,
+.slider_party .list_party .item_party:nth-child(1) .content .buttons
+{
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+  to{
+      transform: translateY(0px);
+      filter: blur(0px);
+      opacity: 1;
+  }
+}
+.slider_party .list_party .item_party:nth-child(1) .content .title{
+  animation-delay: 0.4s !important;
+}
+.slider_party .list_party .item_party:nth-child(1) .content .type{
+  animation-delay: 0.6s !important;
+}
+.slider_party .list_party .item_party:nth-child(1) .content .description{
+  animation-delay: 0.8s !important;
+}
+.slider_party .list_party .item_party:nth-child(1) .content .buttons{
+  animation-delay: 1s !important;
+}
+ */
+
+
+
+/* Animation for next button click */
+.slider_party.next_party .list_party .item_party:nth-child(1) img{
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 30px;
+  animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage{
+  to{
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+  }
+}
+
+.slider_party.next_party .thumbnail_party .item_party:nth-last-child(1){
+  overflow: hidden;
+  animation: showThumbnail .5s linear 1 forwards;
+}
+.slider_party.prev_party .list_party .item_party img{
+  z-index: 100;
+}
+
+
+@keyframes showThumbnail{
+  from{
+      width: 0;
+      opacity: 0;
+  }
+}
+
+
+.slider_party.next_party .thumbnail_party{
+  animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+  from{
+      transform: translateX(20px);
+  }
+}
+
+
+
+/* Animation for prev button click */
+.slider_party.prev_party .list_party .item_party:nth-child(2){
+  z-index: 2;
+}
+
+.slider_party.prev_party .list_party .item_party:nth-child(2) img{
+  animation: outFrame 0.5s linear 1 forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@keyframes outFrame{
+  to{
+      width: 150px;
+      height: 220px;
+      bottom: 50px;
+      left: 50%;
+      border-radius: 20px;
+  }
+}
+
+.slider_party.prev_party .thumbnail_party .item_party:nth-child(1){
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail .5s linear 1 forwards;
+}
+.slider_party.next_party .nextPrevArrows_party button,
+.slider_party.prev_party .nextPrevArrows_party button{
+  pointer-events: none;
+}
+
+
+.slider_party.prev_party .list_party .item_party:nth-child(2) .content .title,
+.slider_party.prev_party .list_party .item_party:nth-child(2) .content .type,
+.slider_party.prev_party .list_party .item_party:nth-child(2) .content .description,
+.slider_party.prev_party .list_party .item_party:nth-child(2) .content .buttons
+{
+  animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+  to{
+      transform: translateY(-150px);
+      filter: blur(20px);
+      opacity: 0;
+  }
+}
+
+/* end final party  */
+ 
+
+
