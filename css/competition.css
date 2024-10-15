@@ -2508,7 +2508,7 @@ margin-bottom: 50px;
      max-width: 1315px;
     height: 100%;
     overflow: hidden;
-    z-index: 100;
+    z-index: 2;
     pointer-events: none;
   }
 
