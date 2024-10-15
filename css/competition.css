@@ -2903,12 +2903,12 @@ margin-bottom: 50px;
 @keyframes makeItRain {
   from {opacity: 0;}
   50% {opacity: 1;}
-  to {transform: translateY(500px);}
+  to {transform: translateY(350px);}
 }
 @-webkit-keyframes makeItRain {
     from {opacity: 0;}
     50% {opacity: 1;}
-    to {-webkit-transform: translateY(500px);}
+    to {-webkit-transform: translateY(350px);}
 }
 
 
