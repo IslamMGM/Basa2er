@@ -188,7 +188,7 @@
 }
 
 .footer-links{
-    margin-right: 12%;
+    margin-right: 10%;
 }
 @media screen and (max-width: 1100px) {
     /* .footer-links{
@@ -329,17 +329,15 @@
         position: relative !important;
     }
     .footer-links{
-        margin-right: 0 !important;
-        position: absolute;
+         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        left: 56%;
+        transform: translate(-50%,-50%) !important;
         text-align: right;
-        margin-top: 30px;
+        top: 30px;
+ 
     }
-    .footer-links li a:hover{
-         padding-right: 0 !important;
-      }
+ 
   }
 
 
