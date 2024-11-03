@@ -422,7 +422,7 @@ input[type]:checked ~ span.mid {
     z-index: 1;
     color: #ffffff;
     transition-delay: 0.3s;
-    border-color: #ffffff;
+    border-color: transparent;
 }
 
 .n-head:hover::before{
