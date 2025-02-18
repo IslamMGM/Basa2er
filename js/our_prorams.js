@@ -8,7 +8,7 @@ let TrandingSlider_party = new Swiper(".programs-slider", {
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 600,
+    depth: 0,
     modifier: 2.5,
   },
   pagination: {

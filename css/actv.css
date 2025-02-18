@@ -4,7 +4,7 @@
 
 }
 
-/* start final party  */
+/* start programs slider */
 
       /* slider section  */
       #programs_slider_box {
@@ -53,35 +53,73 @@
         width: 600px;
         height: 500px;
         border-radius: 16px;
-        border: 3px solid #087f5b;
         object-fit: cover;
       }
-      
+      .border_Khaer_omah{
+        border: 3px solid #273574c8;
+
+      }
+      .border_aesha_radia{
+        border: 3px solid #01B0C5c8;
+
+      }
+      .border_salem{
+        border: 3px solid #ec6b08c8;
+
+      }
+      .border_sahby{
+        border: 3px solid #006164c8;
+
+      }
+      .border_rabia_allah{
+        border: 3px solid #979B4Ec8;
+
+      }
+      .border_rabia_allah_2{
+        border: 1px solid #979B4Ec8;
+
+      }
+      .program_text_box{
+        margin-top: 25px;
+        box-shadow: 0 0 5px 5px #104e7010;
+        border: 1px solid #087f5b3c;
+        border-radius: 10px;
+        width: 93%;
+        margin-left: 10px;
+       }
+      .program_text{
+        text-align: right;
+        line-height: 1.8;
+        color: #07403c;
+        font-weight: 600;
+        padding: 30px 20px;
+          }
+
       @media  (min-width:500px) and (max-width:750px) {
-        .program_image_slide_box {
+        /* .program_image_slide_box {
           width: 440px !important;
           height:367px !important;
-        }
+        } */
         .program_image_slide_box .program_img img {
           width: 440px !important;
           height:367px !important;
         }
       }
-      @media (max-width:500px) {
-        .program_image_slide_box {
+      @media (max-width:510px) {
+        /* .program_image_slide_box {
           width: 380px !important;
           height: 317px !important;
-        }
+        } */
         .program_image_slide_box .program_img img {
           width: 380px !important;
           height: 317px !important;
         }
       }
       @media (max-width:430px) {
-        .program_image_slide_box {
+        /* .program_image_slide_box {
           width: 300px !important;
           height: 250px !important;
-        }
+        } */
         .program_image_slide_box .program_img img {
           width: 300px !important;
           height: 250px !important;
@@ -157,9 +195,111 @@
         display: none;
       }
 
+/* end programs slider */
 
-      /* end final party  */
+/* //// start program section ///// */
+.comp-def-box{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+     margin-bottom: 100px;
+    box-shadow: 0 0 20px 20px #104e7010;
+    border-radius: 10px;
+    height: fit-content;
+}
+/* @media screen and (max-width:767px){
+  .comp-def-box{
+    margin-top: 0px;
+}
+} */
+
+.comp-def-info{
+    padding: 30px 20px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+}
+.comp-def-head-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.def-icon{
+    margin-left: auto;
+    margin-bottom: 10px;
+      width: fit-content;
+      padding: 12px;
+      font-size: 20px;
+      border-radius: 5px;
+      color: #424946;
+       background-color: #d8e8e8;
+    
+}
+.comp-def-head{
+    font-size: 20px;
+    color: #424946;
+    margin-bottom: 15px;
+     width: fit-content;
+ }
+.comp-def-text{
+ font-size: 1rem;
+ line-height: 1.7;
+ color: #424946;
+ font-weight: 400;
+}
+
+.def-img-container {
+  position: relative;
+  overflow: hidden;
+   width: 45%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 0 10px 10px 0;
+}
+
+/* The image fills its container and maintains aspect ratio */
+.def-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, padding 0.1s ease-in-out;
+  padding: 0; /* Ensure no padding initially */
+  /* aspect-ratio: 4/1 !important; */
+}
+
+/* Zoom effect on smaller screens */
+@media (max-width: 950px) {
+  .def-img {
+    transform: scale(1.2); /* Increase the zoom level */
+    padding: 8%; /* Adds padding for a more dynamic effect */
+  }
+}
 
 
+@media screen and (max-width:980px){
+  .comp-def-box{
+    display: block;
+   }
+   .comp-def-info{
+    width: 100%;
+    /* margin-top: -50px; */
+   }
+   .def-img-container {
+    width: 100%;
+    /* height: 450px; */
+    border-radius: 10px 10px 0 0;
+
+   }
+   .def-img{
+    height: 95%;
+    margin-top: -27px;
+   }
+}
+
+
+/* //// end program section ///// */
 
  
