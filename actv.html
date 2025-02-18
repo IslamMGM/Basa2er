@@ -37,7 +37,7 @@
     />
     <!-- ------------------ -->
     <link rel="stylesheet" href="css/header.css?v=1.0" />
-    <link rel="stylesheet" href="css/soon.css?v=1.0" />
+    <link rel="stylesheet" href="css/actv.css" />
     <link rel="stylesheet" href="css/footer.css?v=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="img/f-icon.png" />
     <!-- //// -->
@@ -47,9 +47,13 @@
     />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
-    <!-- //// -->
-    <title>أنشطة بصائر</title>
+    <!-- basa2er program slider with buttons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- -------------------- -->
+    <title>برامج بصائر</title>
   </head>
   <body>
     <!-- start header -->
@@ -78,7 +82,9 @@
                 >المسابقة السنوية</a
               >
             </li>
-            <li><a class="d-links" id="link2" href="actv.html">أنشطتنا</a></li>
+            <li>
+              <a class="d-links" id="link2" href="actv.html">برامج بصائر</a>
+            </li>
             <li>
               <a class="d-links" id="link3" href="hlaqat.html">حلقاتنا</a>
             </li>
@@ -105,7 +111,7 @@
               <a class="m-links" href="competition.html">المسابقة السنوية</a>
             </li>
             <li class="m-lin">
-              <a class="m-links" href="actv.html">أنشطتنا</a>
+              <a class="m-links" href="actv.html">برامج بصائر</a>
             </li>
             <li class="m-lin">
               <a class="m-links" href="hlaqat.html">حلقاتنا</a>
@@ -116,14 +122,67 @@
       </div>
     </header>
     <!-- end header -->
-    <div class="wrapper">
-      <h1>أنشطة ودورات بصائر</h1>
-      <h1>.... قريباً</h1>
-    </div>
-    <div class="wrapper-2">
-      <div class="loader"></div>
+    <!-- start programs slider -->
+    <!-- start final party 7 -->
+    <div id="programs_slider_box">
+      <div class="container">
+        <div class="programs_slider_container">
+          <h3 class="n-head">برامجنا</h3>
+          <div class="swiper programs-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide program_image_slide_box">
+                <div class="program_img">
+                  <img src="img/" loading="lazy" alt="" />
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide program_image_slide_box">
+                <div class="program_img">
+                  <img src="img/" loading="lazy" alt="" />
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide program_image_slide_box">
+                <div class="program_img">
+                  <img src="img/" loading="lazy" alt="" />
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide program_image_slide_box">
+                <div class="program_img">
+                  <img src="img/" loading="lazy" alt="" />
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide program_image_slide_box">
+                <div class="program_img">
+                  <img src="img/" loading="lazy" alt="" />
+                </div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+            <div class="programs_slider_btns_control">
+              <div class="prev-btn">
+                <i class="fa-solid fa-caret-left"></i>
+              </div>
+              <div class="next-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- end final party 7 -->
+
+    <!-- end programs slider -->
     <!-- start footer -->
     <div class="footer-2 soon">
       <div class="container">
@@ -233,5 +292,9 @@
       <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
     </div>
     <script src="js/header.js?v=1.0"></script>
+    <!-- basa2er program slider with buttons -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/our_prorams.js"></script>
+    <!-- ----------------------------------- -->
   </body>
 </html>
