@@ -741,6 +741,7 @@
     padding: 15px 25px;
     border-radius: 10px;
     line-height: 1.7;
+    text-align: center;
 
 }
 .baqat_head3{
@@ -925,6 +926,15 @@
     .adomoha_li{
         font-size: 14px;
     }
+}
+
+.baqat_hr{
+    display: block;
+    height: 4px;
+    width: 100%;
+    text-align: center;
+    background-color: #23c087;
+    margin: 10px auto;
 }
 
   /* ////////////////////////////////////////// */
