@@ -829,12 +829,13 @@
     border-left: 2px solid #20394b;
     color: #0e181f;
     content: "\f004";
-    font: 20px "FontAwesome";
+    font: 22px "FontAwesome";
     padding: 10px 0;
-    padding-left: 15px;
+    padding-left: 10px;
     position: absolute;
     right: 16px;
-    top: 7px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: all 600ms 200ms;
   }
   
