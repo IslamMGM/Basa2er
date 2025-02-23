@@ -73,23 +73,3 @@ function resetTimerramadan() {
 }
 
 //  end ramadan slider js ///////////////
-
-///// handle loader//////
-window.addEventListener("load", function () {
-  const slowContent = document.querySelector(".form-1");
-  const loader = document.querySelector(".loader");
-
-  slowContent.style.visibility = "visible"; // Show the content
-  loader.style.display = "none"; // Hide the loader
-});
-// ////////////////////////////
-window.addEventListener("load", function () {
-  const slowContent = document.querySelector(".form-2");
-  const loader = document.querySelector(".loader-2");
-
-  slowContent.style.visibility = "visible"; // Show the content
-  loader.style.display = "none"; // Hide the loader
-});
-
-// ///////////////////
-// ///////////////////

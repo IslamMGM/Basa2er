@@ -2,8 +2,15 @@
 .landing-container{
     overflow: hidden;
     position: relative;
-    margin-top: 0px;
-     margin-bottom: 30px;
+      margin-bottom: 30px;
+   }
+
+   .baqat_landing_image{
+    margin-top: 50px !important; 
+
+   }
+   .baqat_header{
+    background-color: #072D38;
    }
     
   @media screen and (min-width: 1800px){
@@ -326,7 +333,7 @@
     margin-left:   auto;
     width: 75%;
     background-color: white;
-    border: 6px solid #59a3dc6e;
+    border: 6px solid #3c79a570;
     /* border-radius: 10px 10px 0 0; */
     border-radius: 10px;
 }
@@ -698,3 +705,229 @@
 }
 /* end themar section  */
 
+/* start baqat */
+.baqat_container{
+    direction: rtl;
+    margin-bottom: 30px;
+}
+.baqat_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.baqat_img_container{
+    width: 600px;
+    height: 600px;
+}
+.baqat_img{
+    width: 100%;
+    height: 100%;
+}
+.baqat_text_container{
+    padding: 20px 25px;
+    border-radius: 15px;
+    border: 1px solid #8facc3;
+    box-shadow: 0 0 20px 5px #00000014;
+}
+.baqat_head4{
+    font-size: 20px;
+    color: #6d401d;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #6d401d26;
+    padding: 15px 25px;
+    border-radius: 10px;
+    line-height: 1.7;
+
+}
+.baqat_head3{
+    font-size: 25px;
+    color: #ea5ca1;
+    width: fit-content;
+     margin-bottom: 15px;
+}
+.baqat_head4_1{
+    font-size: 20px;
+    color: #b3457a;
+    width: fit-content;
+     margin-bottom: 20px;
+     line-height: 1.6;
+
+}
+.alem_li{
+    font-size: 18px;
+    color: #a05e2c;
+    width: fit-content;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    margin-right: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 650px){
+    .baqat_img_container{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 550px){
+    .baqat_img_container{
+        width: 450px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 450px){
+    .baqat_img_container{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 767px){
+    .baqat_head4{
+        font-size: 16px;
+        text-align: center;
+    }
+    .baqat_head3{
+        font-size: 15px;
+    }
+    .baqat_head4_1{
+        font-size: 15px;
+    }
+    .alem_li{
+        font-size: 14px;
+    }
+}
+
+/* end baqat */
+
+  
+  .sahem {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    position: relative;
+    text-decoration: none;
+    background: #254258;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%),
+                linear-gradient(to right, #3f6f93 0%, #315b7b 50%, #325773 100%);
+    background-position: 0 0;
+    background-size: 200% 100%;
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 65px 15px 15px;
+    transition: all 0.5s;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+   }
+  
+  .sahem::after {
+    border-left: 2px solid #20394b;
+    color: #0e181f;
+    content: "\f004";
+    font: 20px "FontAwesome";
+    padding: 10px 0;
+    padding-left: 15px;
+    position: absolute;
+    right: 16px;
+    top: 7px;
+    transition: all 600ms 200ms;
+  }
+  
+  .sahem:hover {
+    background-position: -100% 0;
+  }
+  
+  .sahem:hover::after {
+    border-left: 1px solid #111f29;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+  }
+
+
+  /*  */
+
+
+  .baqat_head3_wessam{
+    font-size: 20px;
+    color: #015a80;
+    width: fit-content;
+     margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  @media screen and (max-width: 767px){
+    .baqat_head3_wessam{
+        font-size: 15px;
+    }
+}
+.wessam_li{
+    font-size: 18px;
+    color: #7373b5;
+    width: fit-content;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    margin-right: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 767px){
+    .wessam_li{
+        font-size: 14px;
+    }
+}
+  .baqat_head3_adomoha{
+    font-size: 20px;
+    color: #015a80;
+    width: fit-content;
+    margin: 0 auto;
+     margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  .baqat_head3_adomoha_last{
+    font-size: 18px;
+    color: #202610;
+      margin-bottom: 15px;
+    line-height: 1.7;
+   }
+  .baqat_head3_adomoha span{
+    font-size: 15px;
+    color: #0784ba;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+   }
+  @media screen and (max-width: 767px){
+    .baqat_head3_adomoha{
+        font-size: 15px;
+    }
+    .baqat_head3_adomoha_last{
+        font-size: 15px;
+
+       }
+}
+.adomoha_li{
+    font-size: 18px;
+    color: #42570c;
+    width: fit-content;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    margin-right: 25px;
+    font-weight: 600;
+}
+.adomoha_li:first-child{
+ margin-top: 20px;
+}
+@media screen and (max-width: 767px){
+    .adomoha_li{
+        font-size: 14px;
+    }
+}
+
+  /* ////////////////////////////////////////// */
+.form-1{
+    display: none;
+}
