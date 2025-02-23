@@ -69,6 +69,62 @@
      box-shadow: 0 0 30px 5px #00000012;
     border-radius: 10px 10px 0 0 ;
     margin-top: 70px;
+    cursor: pointer;
+  }
+  .more_btn{
+    position: absolute;
+     background-color: #00000057;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 40px;
+    padding-left: 70px;
+     color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .more_btn::before{
+    position: absolute;
+    content: "\f25a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+   }
+   @media screen and (max-width: 700px) {
+    .more_btn{
+ 
+        padding: 12px 30px;
+        padding-left: 60px;
+         font-size: 12px;
+       }
+      .more_btn::before{
+ 
+        left: 30px;
+        font-size: 15px;
+       }
+ 
+  }
+   @media screen and (max-width: 400px) {
+    .more_btn{
+ 
+        padding: 12px 25px;
+        padding-left: 55px;
+         font-size: 10px;
+       }
+      .more_btn::before{
+ 
+        left: 30px;
+        font-size: 13px;
+       }
+ 
   }
   
   @media screen and (max-width: 767px) {
