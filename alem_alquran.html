@@ -125,52 +125,11 @@
     <!-- start landing section -->
     <div class="landing-container">
       <div class="mySlides animate" data-color="#181816">
-        <img class="cover-img" src="img/" alt="" />
+        <img class="cover-img" src="img/ramadan_img/alem.jpg" alt="" />
       </div>
     </div>
     <!-- end landing section -->
-    <!-- start ramadan slider  -->
-    <div class="ramadan-slider">
-      <div class="container">
-        <div class="landing-container-ramadan">
-          <div class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/1bg.jpg" alt="1" />
-          </div>
-          <div class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/2bg.jpg" alt="1" />
-          </div>
-          <div class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/3bg.jpg" alt="1" />
-          </div>
-          <div class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/4bg.jpg" alt="1" />
-          </div>
-          <div class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/5bg.jpg" alt="1" />
-          </div>
-          <a class="prev-ramadan" onclick="prevSlideramadan()">&#10094;</a>
-          <a class="next-ramadan" onclick="nextSlideramadan()">&#10095;</a>
-        </div>
-        <div class="dots-container-ramadan">
-          <a class="prev-mobile" onclick="prevSlideramadan()"
-            ><i class="fa-solid fa-arrow-left-long"></i
-          ></a>
-          <span class="dots-ramadan" onclick="currentSlideramadan(1)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(2)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(3)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(4)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(5)"></span>
-          <a class="next-mobile" onclick="nextSlideramadan()"
-            ><i class="fa-solid fa-arrow-right-long"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    <!-- start ramadan slider  -->
-    <div class="form-container form-1">
-      <!-- <div class="form-head">
-        <h4 class="form-label"></h4>
-      </div> -->
+    <!-- <div class="form-container form-1">
       <div class="loader"></div>
       <iframe
         id="embeddedForm"
@@ -178,7 +137,7 @@
         src="https://app.fawaterk.com/invoices/item/12090/adomha-kfal-maalm-abd-aldhr"
       >
       </iframe>
-    </div>
+    </div> -->
     <!-- start footer -->
     <div class="footer-2 soon">
       <div class="container">
@@ -288,5 +247,18 @@
       <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
     </div>
     <script src="js/header.js?v=1.0"></script>
+    <!-- animate on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        AOS.refresh();
+      });
+
+      AOS.init({
+        duration: 1200,
+        once: false, // This makes sure animations trigger every time
+      });
+    </script>
+    <!-- ---------------- -->
   </body>
 </html>
