@@ -1031,8 +1031,8 @@
   
   .events-videos-box {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-    /* gap: 50px; */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 50px;
     width: 100%; /* Ensure it uses available space but respects max-width */
     padding: 20px; /* Optional: add some padding for spacing */
     max-width: 1200px; /* or any width you prefer */
@@ -1048,8 +1048,8 @@
     align-items: center; /* Vertically center */
     position: relative;
     width: 100%;  
-    max-width: 620px; /* Main width */
-    height: 340px; /* Main height */
+    max-width: 500px; /* Main width */
+    height: 310px; /* Main height */
     background-color: #ffffff;  
     overflow: hidden;  
     margin: auto;  
