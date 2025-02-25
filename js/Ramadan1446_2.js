@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   recordBtn.addEventListener("click", function (event) {
     event.preventDefault();
+
     form1.style.display = "block";
+    form1.animate(
+      [
+        { opacity: 0, transform: "translateY(-20px)" },
+        { opacity: 1, transform: "translateY(0)" },
+      ],
+      {
+        duration: 700,
+        easing: "ease-in",
+        fill: "forwards",
+      }
+    );
   });
 });
