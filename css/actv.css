@@ -1057,6 +1057,41 @@
     border-radius: 15px;
 
   }
+  @media screen and (max-width: 620px){
+    .events-videos-box {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      max-width: 1200px; /* or any width you prefer */
+      margin-top: -90px; 
+    }
+    .video-container {
+      max-width: 400px; /* Main width */
+      height: 240px; /* Main height */
+    }
+  
+}
+  @media screen and (max-width: 500px){
+    .events-videos-box {
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      max-width: 1200px; /* or any width you prefer */
+      margin-top: -90px; 
+    }
+    .video-container {
+      max-width: 350px; /* Main width */
+      height: 210px; /* Main height */
+    } 
+}
+  @media screen and (max-width: 450px){
+    .events-videos-box {
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      max-width: 1200px; /* or any width you prefer */
+      margin-top: -90px; 
+    }
+    .video-container {
+      max-width: 290px; /* Main width */
+      height: 190px; /* Main height */
+    } 
+}
+
   
   .events-videos-box iframe {
     border-radius: 10px;
