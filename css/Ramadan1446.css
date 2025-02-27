@@ -743,7 +743,7 @@
     height: 75vh;
   }
 
-  @media screen and (max-width: 1360px) {
+  /* @media screen and (max-width: 1360px) {
     .themar_statistics{
         height: 70vh;
       }
@@ -788,7 +788,7 @@
     .themar_statistics{
         height: 100vh;
       }
-}
+} */
  
 
 @media screen and (max-width: 767px) {
