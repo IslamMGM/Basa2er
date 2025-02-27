@@ -722,6 +722,36 @@
         }
  
 }
+.sts_container{
+  padding: 0 25px;
+  margin: 0 auto;
+}
+/* media query for sts_container{
+ */
+/* desktop */
+@media screen and (min-width: 1440px){
+  .sts_container {
+      width: 1380px;
+  }
+}
+/* laptop */
+@media screen and (min-width: 1024px) and (max-width:1439px){
+  .sts_container {
+      width: 97%;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .sts_container {
+      width: 99%;
+  }
+}
+/* mobile */
+@media screen and (max-width: 767px){
+  .sts_container {
+      width: 100%;
+  }
+}
 
 .themar_statistics_box{
     box-shadow: 0px 0px 30px 15px #44444415;
@@ -742,11 +772,13 @@
     width: 100%;;
     height: 100vh;
   }
-  /* @media screen and (max-width: 767px) {
-    .themar_statistics{
-        height: 120vh;
-      }
-    } */
+
+  @media screen and (max-width: 767px){
+    .sts_container {
+       padding: 0 !important;
+    }
+  }
+ 
 
   /* @media screen and (max-width: 1360px) {
     .themar_statistics{
