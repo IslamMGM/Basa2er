@@ -33,3 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
+// /////////////////////
+const recordBtn = document.querySelector(".sahem");
+document.addEventListener("DOMContentLoaded", function () {
+  recordBtn.addEventListener("click", function () {
+    recordBtn.classList.add("active_sahem");
+  });
+});
+// //

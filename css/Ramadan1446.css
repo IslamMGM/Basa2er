@@ -980,12 +980,21 @@
   .sahem:hover {
     background-position: -100% 0;
   }
+  .sahem.active_sahem {
+    background-position: -100% 0;
+  }
+
   
   .sahem:hover::after{
     border-left: 1px solid #ffffff;
     color: #fff;
     text-shadow: 0 0 10px #000;
   }
+  .sahem.active_sahem::after {
+    border-left: 1px solid #ffffff;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
 
   @media screen and (max-width: 767px){
     .sahem {
