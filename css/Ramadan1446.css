@@ -339,11 +339,11 @@
 .form-container::before{
  content: "";
  position: absolute;   
- width: 100%;
+ width: 100.1%;
  height: 110px;
  background-color: #4d7b88;
  bottom: 0;
- z-index: 5;
+  z-index: 5;
 }
 
 @media screen and (max-width: 767px) {

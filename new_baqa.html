@@ -53,13 +53,13 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <!-- -------------------- -->
-    <title>رمضان 1446</title>
+    <title>new</title>
   </head>
   <body>
     <!-- start header -->
     <a id="to-top"></a>
 
-    <header class="main-header soon-header">
+    <header class="main-header baqat_header">
       <div class="container">
         <div class="logo-container">
           <a href="index.html">
@@ -123,136 +123,89 @@
     </header>
     <!-- end header -->
     <!-- start landing section -->
-    <div class="landing-container">
-      <div class="mySlides animate" data-color="#181816">
-        <img class="cover-img" src="img/ramadan_img/Slider-05.jpg" alt="" />
+    <div class="landing-container baqat_landing_image">
+      <div class="mySlides animate">
+        <img class="cover-img" src="img/ramadan_img/" alt="new baqa landing" />
       </div>
     </div>
+    <!-- start abaqat section-->
+    <div class="baqat_container">
+      <div class="container">
+        <div class="baqat_box">
+          <div class="baqat_img_container">
+            <img class="baqat_img" src="" alt=" new baqa small image" />
+          </div>
+          <div class="baqat_text_container">
+            <h3 style="background-color: #fffee0" class="baqat_head4">
+              عَلِّم القرآنَ بمالِك، فمعلمونا يكفوك ذلك
+            </h3>
+            <h3 class="baqat_head3">قال النبي ﷺ</h3>
+            <h4 class="baqat_head4_1">
+              «من دعا إلى هدى كان له من الأجر مثل أجور من تبعه، لا ينقص ذلك من
+              أجورهم شيئًا».
+            </h4>
+            <ul>
+              <li class="alem_li">ادعم طلبة العلم وشاركهم الأجر الجزيل</li>
+              <li class="alem_li">لنا فى القبور أحباب نهديهم أجر كفالة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end baqat section -->
     <!-- end landing section -->
-    <!-- start ramadan slider  -->
-    <div class="ramadan-slider">
+    <div class="container">
+      <div class="sahem_btns_box_alem">
+        <button class="sahem_alem_one sahem_alem_one_arrow">
+          ادعم بكفالة ختمة
+        </button>
+        <button class="sahem_alem_two sahem_alem_two_arrow">
+          ادعم بكفالة جزء يوميًا لمدة شهر
+        </button>
+      </div>
+      <div class="form-container form_alem_one">
+        <div class="loader loader_alem_one"></div>
+        <iframe
+          id="embeddedForm"
+          class="form-frame"
+          src="https://app.fawaterk.com/invoices/item/12083/aalm-alkran-kfal-khtm"
+        >
+        </iframe>
+      </div>
+      <div class="form-container form_alem_two">
+        <div class="loader loader_alem_two"></div>
+        <iframe
+          id="embeddedForm"
+          class="form-frame"
+          src="https://app.fawaterk.com/invoices/item/12084/aalm-alkran-kfal-gzaa-yomya-lmd-shhr"
+        >
+        </iframe>
+      </div>
+      <!-- /////////////////// -->
+      <div class="sahem_btns_box_alem">
+        <button class="sahem_alem_three sahem_alem_three_arrow">
+          ادعم بكفالة جزء يوميًا لمدة 6 شهور
+        </button>
+      </div>
+      <div class="form-container form_alem_three">
+        <div class="loader loader_alem_three"></div>
+        <iframe
+          id="embeddedForm"
+          class="form-frame"
+          src="https://app.fawaterk.com/invoices/item/12085/aalm-alkran-kfal-gzaa-yomya-lmd-6-shhor"
+        >
+        </iframe>
+      </div>
+      <!-- //////////////////// -->
+      <!-- //////////////////// -->
+    </div>
+    <div class="back_baqat_home_box">
       <div class="container">
-        <div class="landing-container-ramadan">
-          <div class="more_btn">تفاصيل أكثر </div>
-          <a href="new_baqa.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="" alt="new firet img" />
-          </a>
-          <a href="wesam_alkaramah.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/1bg.jpg" alt="1" />
-          </a>
-          <a href="adomoha.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/2bg.jpg" alt="1" />
-          </a>
-          <a href="sadaka_alomr.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/3bg.jpg" alt="1" />
-          </a>
-          <a href="zakatak.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/4bg.jpg" alt="1" />
-          </a>
-          <a href="alem_alquran.html" class="mySlides-ramadan animate-ramadan">
-            <img class="ramadan-p-img" src="img/ramadan_img/5bg.jpg" alt="1" />
-          </a>
-          <a class="prev-ramadan" onclick="prevSlideramadan()">&#10094;</a>
-          <a class="next-ramadan" onclick="nextSlideramadan()">&#10095;</a>
-        </div>
-        <div class="dots-container-ramadan">
-          <a class="prev-mobile" onclick="prevSlideramadan()"
-            ><i class="fa-solid fa-circle-left"></i></a>
-          <span class="dots-ramadan" onclick="currentSlideramadan(1)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(2)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(3)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(4)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(5)"></span>
-          <span class="dots-ramadan" onclick="currentSlideramadan(6)"></span>
-          <a class="next-mobile" onclick="nextSlideramadan()"
-            ><i class="fa-solid fa-circle-right"></i></a>
-        </div>
+        <a href="Ramadan1446.html"
+          ><i class="fa-solid fa-right-from-bracket back_baqat_home"></i
+        ></a>
       </div>
     </div>
-    <!-- end ramadan slider  -->
-    <!-- start khadamatona section -->
-    <div class="khadamatona_container">
-      <div class="container">
-        <div class="khadamatona_box">
-          <div 
-          class="khadamatona_text_box"
-          data-aos="fade-up"
-          data-aos-offset="3"
-          >
-            <p >
-                <ul>
-                    <li class="khadamatona_text">تقديم خدمة تعليم القرآن حفظًا ومراجعة بأعلى جودة وبتكلفة مقبولة على ولي الأمر</li>
-                    <li class="khadamatona_text">تعليم تجويد كتاب الله عز وجل وحسن ترتيله وفهم معانيه والتأدب معه</li>
-                    <li class="khadamatona_text">توفير بديل آمن لأولياء الأمور ببيئة إيمانية تربوية وصحية لأبنائهم بعيدًا عن الغلو</li>
-                    <li class="khadamatona_text">تربية الطلاب على العيش بكتاب الله واتخاذه صاحبًا ومنهاجًا في رحلة الحياة</li>
-                    <li class="khadamatona_text">تعليم أبنائنا الطلاب المهارات الحياتية وتنمية قدراتهم العقلية والاجتماعية والنفسية</li>
-                    <li class="khadamatona_text">تعليم علوم الشريعة فقه وعقيدة وسلوك وحديث وسيرة ومطالعة وغيره</li>
-                    <li class="khadamatona_text">تصميم الأنشطة التربوية الهادفة الممتعة اللازمة لبناء جوانب الشخصية المسلمة المتكاملة</li>
-                </ul>
-            </p>
-          </div>
-          <div class="khadamatona_img_contaiber">
-            <img
-              class="khadamatona_img"
-              src="img/ramadan_img/khadamotona.jpg"
-              alt=""
-              data-aos="fade-down"
-              data-aos-offset="3"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end khadamatona section  -->
-    <!-- start themar section -->
-    <div class="themar_container">
-      <div class="container">
-        <div class="themar_box">
-          <div class="themar_img_contaiber"
-          data-aos="fade-down"
-          data-aos-offset="3"
-          >
-            <img class="themar_img" src="img/ramadan_img/themar.jpg" alt="" />
-          </div>
-          <div class="themar_text_box"
-          data-aos="fade-up"
-          data-aos-offset="3"
-          >
-            <p>
-                <ul>
-                    <li class="themar_text">إتمام حفظ ومراجعة أكثر من 60,000 جزء قرآني سنويًا</li>
-                    <li class="themar_text">أكثر من 10,000 مستفيد سنويًا من خدمات وأنشطة المركز المتنوعة</li>
-                    <li class="themar_text">إجازة 10 طلاب بالسند المتصل عن رسول الله صلى الله عليه وسلم</li>
-                    <li class="themar_text">اجتياز حوالي 1,000 اختبار في القرآن الكريم بمتوسط نسبة اجتياز تفوق 92%</li>
-                    <li class="themar_text">اجتياز أكثر4,000 من  اختبار شهري في القرآن والعلوم الشرعية  بمتوسط نسبة اجتياز تفوق 92%</li>
-                    <li class="themar_text">تنفيذ حوالي 4,000 نشاط تربوي ومهاري سنويًا داخل حلقات المركز</li>
-                    <li class="themar_text">مشاركة أكثر من 5000 طالب بأنشطة ورحلات المركز التي تهدف إلى غرس القيم والأخلاق والعلم النافع</li>
-                    <li class="themar_text">تدريس أكثر من 70,000ساعة للعلوم الشرعية والأنشطة التربوية وعلوم القرآن سنويًا</li>
-                    <li class="themar_text">فوز طلاب المركز بأكثر من33% من مراكز الأوائل في مسابقات حفظ القرآن التي شاركوا بها</li>
-                    <li class="themar_text">فوز طلاب المركز بأكثر من 70% من مراكز الأوائل في مسابقات تدبر القرآن التي شاركوا بها</li>
-                    <li class="themar_text">تعليم القرآن وعلومه والعلوم الشرعية لأكثر من 1,500 طالب علم مسجل بحلقات المركز سنويًا</li>
-                    <li class="themar_text">إعداد أكثر من 100 معلم قرآن من خلال حلقات معلمي القرآن والدورات التدريبية والتوجيهية</li>
-                </ul>
-            </p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="sts_container">
-        <div class="themar_statistics_box"
-        data-aos="zoom-in"
-        data-aos-offset="3">
-            <iframe
-            id="embeddedForm"
-            class="themar_statistics"
-            src="https://analytics.zoho.com/open-view/2779472000001579622"
-          >
-          </iframe>
-          </div>
-      </div>
-
-    </div>
-    <!-- end themar section  -->
     <!-- start footer -->
     <div class="footer-2 soon">
       <div class="container">
@@ -362,8 +315,6 @@
       <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
     </div>
     <script src="js/header.js?v=1.0"></script>
-    <script src="js/Ramadan1446.js?v=1.0"></script>
-    <!-- ----------------------------------- -->
     <!-- animate on scroll -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -377,5 +328,8 @@
       });
     </script>
     <!-- ---------------- -->
+    <script src="js/Ramadan1446.js?v=1.0"></script>
+    <script src="js/Ramadan1446_2.js?v=1.0"></script>
+    <script src="js/alem_alquran.js?v=1.0"></script>
   </body>
 </html>
