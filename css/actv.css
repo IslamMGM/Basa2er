@@ -1916,7 +1916,8 @@ margin-bottom: -20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 40px;
  }
 .current_progrm_text_price{
   font-size: 14px;
