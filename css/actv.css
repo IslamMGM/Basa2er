@@ -870,7 +870,9 @@ margin-bottom: -20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 400px;
+    flex-direction: column;
+
+  gap: 40px;
  }
 
 /* <!-- start sub section --> */
@@ -971,10 +973,27 @@ margin-bottom: -20px;
     color: #1DEFFA;
     font-size: 20px;
     font-weight: 700;
-      text-wrap: nowrap;
-
+    background: linear-gradient(120deg, #2b1709, #ac8569, #2b1709);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .3s;
+    animation: gradientAnimation 1s infinite alternate;
  }
+/* ///// */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+@media screen and (min-width: 500px) {
+  .continue-application {
+    width: 400px;
+  }
 
+}
 .continue-application > div {
   top: 0;
   left: 0;
@@ -983,7 +1002,7 @@ margin-bottom: -20px;
   position: absolute;
   overflow: hidden;
   border-radius: 5px 0 0 5px;
-  background: #01494d;
+  background: #2b1709;
   border-radius: 20px 0 0 20px;
 }
 
@@ -991,8 +1010,8 @@ margin-bottom: -20px;
   width: 23px;
   height: 27px;
   position: absolute;
-  left: 22px;
-  top: 15px;
+  left: 15px;
+  top: 17px;
   
 }
 
@@ -1120,8 +1139,8 @@ margin-bottom: -20px;
     font-size: 23px;
     color: #1DEFFA; 
   position: absolute;
-  top: 17px;
-  right: 15px;
+  top: 20px;
+  right: 95px;
   transition: transform 0.3s;
 }
 
@@ -1711,6 +1730,8 @@ margin-bottom: -20px;
   display: flex;
   align-items: center;
   justify-content: center;
+    flex-direction: column;
+
   gap: 50px;
  }
 }
@@ -1978,18 +1999,17 @@ margin-bottom: -20px;
   border-radius: 5px;
    /* -webkit-appearance: none; */
   -webkit-tap-highlight-color: transparent;
-  padding: 20px 33px 20px 60px;
+  padding: 20px 45px 20px 150px;
   transition: background 0.3s;
-        background-color: #01494d;
     border-radius: 20px;
     color: #1DEFFA;
     font-size: 20px;
     font-weight: 700;
       text-wrap: nowrap;
       margin-top: 4px;
-
  }
-
+/* ///// */
+/* ///// */
 .continue-application > div {
   top: 0;
   left: 0;
@@ -1998,7 +2018,6 @@ margin-bottom: -20px;
   position: absolute;
   overflow: hidden;
   border-radius: 5px 0 0 5px;
-  background: #01494d;
   border-radius: 20px 0 0 20px;
 }
 
@@ -2007,7 +2026,7 @@ margin-bottom: -20px;
   height: 18px;
   position: absolute;
   left: 15px;
-  top: 17px;
+  top: 20px;
   
 }
 
@@ -2135,8 +2154,8 @@ margin-bottom: -20px;
     font-size: 20px;
     color: #1DEFFA; 
   position: absolute;
-  top: 21px;
-  right: 10px;
+  top: 23px;
+  right: 17px;
   transition: transform 0.3s;
 }
 
