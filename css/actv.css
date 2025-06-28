@@ -1139,7 +1139,9 @@ margin-bottom: -20px;
     font-size: 23px;
     color: #1DEFFA; 
   position: absolute;
-  top: 20px;
+  /* top: 20px; */
+  top: 50%;
+  transform: translateY(-50%);
   right: 95px;
   transition: transform 0.3s;
 }
@@ -2154,7 +2156,9 @@ margin-bottom: -20px;
     font-size: 20px;
     color: #1DEFFA; 
   position: absolute;
-  top: 23px;
+  /* top: 23px; */
+    top: 50%;
+  transform: translateY(-50%);
   right: 17px;
   transition: transform 0.3s;
 }
