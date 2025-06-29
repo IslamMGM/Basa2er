@@ -46,14 +46,29 @@ window.addEventListener("load", function () {
 
 // ///////////////////
 // ///////////////////
+// document.addEventListener("DOMContentLoaded", function () {
+//   const recordBtn = document.querySelector(".click");
+//   const form1 = document.querySelector(".form-1");
+
+//   recordBtn.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     form1.style.display = "block";
+//   });
+// });
 document.addEventListener("DOMContentLoaded", function () {
   const recordBtn = document.querySelector(".click");
   const form1 = document.querySelector(".form-1");
 
+  // When user clicks the button
   recordBtn.addEventListener("click", function (event) {
     event.preventDefault();
     form1.style.display = "block";
   });
+
+  // If URL hash is #subscription_link, open the form automatically
+  if (window.location.hash === "#subscription_link") {
+    form1.style.display = "block";
+  }
 });
 
 ///////////////////// handle videos section /////////////////////////
