@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
     form1.style.display = "block";
   });
 
-  // If URL hash is #subscription_link, open the form automatically
-  if (window.location.hash === "#subscription_link") {
+  // If URL hash is #subscription, open the form automatically
+  if (window.location.hash === "#subscription") {
     form1.style.display = "block";
   }
 });
