@@ -2190,6 +2190,9 @@ margin-bottom: -20px;
 }
 
 /* ///////////// Q and A //////////// */
+.Q_and_A_container{
+  scroll-margin-top: 120px; 
+}
 .Q_and_A_head{
 margin: 60px 38px 28px 0;
 position: relative;
