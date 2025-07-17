@@ -2246,7 +2246,9 @@ color: #037379;
 
 }
 .Q_head.open::before {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(0%);
+  top: -16px;
+
 }
 
 .answer_box {
