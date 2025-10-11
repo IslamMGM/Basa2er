@@ -28,13 +28,7 @@ let TrandingSlider_party = new Swiper(".programs-slider", {
 });
 
 ///////////
-window.addEventListener("load", function () {
-  const slowContent = document.querySelector(".form-1");
-  const loader = document.querySelector(".loader");
 
-  slowContent.style.visibility = "visible"; // Show the content
-  loader.style.display = "none"; // Hide the loader
-});
 // ////////////////////////////
 // window.addEventListener("load", function () {
 //   const slowContent = document.querySelector(".form-2");
@@ -55,21 +49,41 @@ window.addEventListener("load", function () {
 //     form1.style.display = "block";
 //   });
 // });
+// Part 1: Show form when the button is clicked
 document.addEventListener("DOMContentLoaded", function () {
   const recordBtn = document.querySelector(".click");
   const form1 = document.querySelector(".form-1");
 
-  // When user clicks the button
   recordBtn.addEventListener("click", function (event) {
     event.preventDefault();
     form1.style.display = "block";
+    //////////////
+    if (window.location.hash !== "#subscription") {
+      window.location.hash = "subscription";
+      location.reload();
+    }
+    //////////////
   });
+});
 
-  // If URL hash is #subscription, open the form automatically
+// Part 2: Automatically show form if URL hash is #subscription
+document.addEventListener("DOMContentLoaded", function () {
+  const form1 = document.querySelector(".form-1");
+
   if (window.location.hash === "#subscription") {
     form1.style.display = "block";
   }
 });
+
+////////////////////////////////////////////////////////////////////////
+window.addEventListener("load", function () {
+  // const slowContent = document.querySelector(".form-1");
+  const loader = document.querySelector(".loader");
+
+  // slowContent.style.display = "visible"; // Show the content
+  loader.style.display = "none"; // Hide the loader
+});
+////////////////////////////////////////////////////////////////////////////
 
 ///////////////////// handle videos section /////////////////////////
 // Select all thumbnail images
