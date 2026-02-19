@@ -341,7 +341,7 @@
  content: "";
  position: absolute;   
  width: 100.1%;
- height: 110px;
+ height: 80px;
  background-color: #4d7b88;
  bottom: 0;
   z-index: 5;
@@ -1661,23 +1661,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    width: 30%;
+    width: 25%;
     height: 60px;
     text-align: center;
    }
    @media screen and (max-width: 1500px){
     .sahem_alem_one {
-        width: 35%;
+        width: 30%;
        }
 }
    @media screen and (max-width: 1200px){
     .sahem_alem_one {
-        width: 40%;
+        width: 35%;
        }
 }
    @media screen and (max-width: 1100px){
     .sahem_alem_one {
-        width: 45%;
+        width: 40%;
        }
 }
 
@@ -1740,7 +1740,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .sahem_alem_one {
         /* padding: 10px; */
         padding-right: 45px;
-        font-size: 15px;
+        font-size: 13px;
         outline: none;
         margin-bottom: 10px;
 
@@ -1755,7 +1755,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media screen and (max-width: 500px){
     .sahem_alem_one {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.3;
        }
 }
@@ -1782,23 +1782,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    width: 30%;
+    width: 25%;
     height: 60px;
     text-align: center;
    }
    @media screen and (max-width: 1500px){
     .sahem_alem_two {
-        width: 35%;
+        width: 30%;
        }
 }
    @media screen and (max-width: 1200px){
     .sahem_alem_two {
-        width: 40%;
+        width: 35%;
        }
 }
    @media screen and (max-width: 1100px){
     .sahem_alem_two {
-        width: 45%;
+        width: 40%;
        }
 }
 
@@ -1861,7 +1861,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .sahem_alem_two {
         /* padding: 10px; */
         padding-right: 45px;
-        font-size: 15px;
+        font-size: 13px;
         outline: none;
         margin-bottom: 10px;
 
@@ -1876,7 +1876,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media screen and (max-width: 500px){
     .sahem_alem_two {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.3;
        }
 }
@@ -1903,23 +1903,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    width: 30%;
+    width: 25%;
     height: 60px;
     text-align: center;
    }
    @media screen and (max-width: 1500px){
     .sahem_alem_three {
-        width: 35%;
+        width: 30%;
        }
 }
    @media screen and (max-width: 1200px){
     .sahem_alem_three {
-        width: 40%;
+        width: 35%;
        }
 }
    @media screen and (max-width: 1100px){
     .sahem_alem_three {
-        width: 45%;
+        width: 40%;
        }
 }
 
@@ -1982,7 +1982,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .sahem_alem_three {
         /* padding: 10px; */
         padding-right: 45px;
-        font-size: 15px;
+        font-size: 13px;
         outline: none;
         margin-bottom: 10px;
 
@@ -1997,7 +1997,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media screen and (max-width: 500px){
     .sahem_alem_three {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.3;
        }
 }
@@ -2024,23 +2024,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    width: 30%;
+    width: 25%;
     height: 60px;
     text-align: center;
    }
    @media screen and (max-width: 1500px){
     .sahem_alem_four {
-        width: 35%;
+        width: 30%;
        }
 }
    @media screen and (max-width: 1200px){
     .sahem_alem_four {
-        width: 40%;
+        width: 35%;
        }
 }
    @media screen and (max-width: 1100px){
     .sahem_alem_four {
-        width: 45%;
+        width: 40%;
        }
 }
 
@@ -2103,7 +2103,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .sahem_alem_four {
         /* padding: 10px; */
         padding-right: 45px;
-        font-size: 15px;
+        font-size: 13px;
         outline: none;
         margin-bottom: 10px;
 
@@ -2118,7 +2118,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media screen and (max-width: 500px){
     .sahem_alem_four {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.3;
        }
 }
@@ -2134,7 +2134,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
     background: #254258;
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%),
-                linear-gradient(to right, #3f6f93 0%, #315b7b 50%, #325773 100%);
+                linear-gradient(to right, #375237 0%, #86dbac 50%, #375237 100%);
     background-position: 0 0;
     background-size: 200% 100%;
     border-radius: 8px;
@@ -2166,8 +2166,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   
   .sahem_alem_five::after {
-    border-left: 2px solid #20394b;
-    color: #0e181f;
+    border-left: 2px solid #375237;
+    color: #273a27;
     content: "\f004";
     font: 22px "FontAwesome";
     padding: 10px 0;
@@ -2203,7 +2203,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute ;
     content: "" ;
     border-width: 0px ;
-    border-color: #213D53 transparent transparent transparent ;
+    border-color: #2d422d transparent transparent transparent ;
     z-index: 5;
     border-style: solid ;
     top: 100%;
@@ -2255,7 +2255,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
     background: #254258;
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%),
-                linear-gradient(to right, #3f6f93 0%, #315b7b 50%, #325773 100%);
+                linear-gradient(to right, #375237 0%, #86dbac 50%, #375237 100%);
     background-position: 0 0;
     background-size: 200% 100%;
     border-radius: 8px;
@@ -2287,8 +2287,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   
   .sahem_alem_six::after {
-    border-left: 2px solid #20394b;
-    color: #0e181f;
+    border-left: 2px solid #375237;
+    color: #273a27;
     content: "\f004";
     font: 22px "FontAwesome";
     padding: 10px 0;
@@ -2324,7 +2324,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute ;
     content: "" ;
     border-width: 0px ;
-    border-color: #213D53 transparent transparent transparent ;
+    border-color: #2d422d transparent transparent transparent ;
     z-index: 5;
     border-style: solid ;
     top: 100%;
