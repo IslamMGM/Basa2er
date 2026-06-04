@@ -1,0 +1,288 @@
+/* ///// start landing section  ///// */
+.comp-land{
+    background-color: #092D38;
+    }
+
+.policy_header{
+    margin: 50px auto;
+    margin-top: 80px;
+
+}
+/* //// */
+/* ==========================================
+   POLICY SECTION
+========================================== */
+
+.policy-section{
+    background: linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef4ff 50%,
+        #f9fbff 100%
+    );
+
+    min-height: 100vh;
+    padding: 80px 20px;
+    direction: rtl;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.policy-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.policy-title{
+    text-align: center;
+    color: #1e293b;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.policy-title::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 4px;
+    background: #2563eb;
+    margin: 15px auto 0;
+    border-radius: 50px;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.timeline{
+    position: relative;
+}
+
+.timeline::before{
+    content: "";
+    position: absolute;
+    right: 17px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #2563eb,
+        rgba(37,99,235,.15)
+    );
+}
+
+/* ==========================================
+   TIMELINE ITEM
+========================================== */
+
+.timeline-item{
+    position: relative;
+    padding-right: 55px;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   TIMELINE DOT
+========================================== */
+
+.timeline-dot{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    border: 3px solid #ffffff;
+
+    box-shadow:
+        0 0 0 5px rgba(37,99,235,.08),
+        0 0 12px rgba(37,99,235,.25);
+
+    z-index: 2;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.timeline-card{
+
+    background: rgba(255,255,255,.92);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    padding: 22px 25px;
+
+    color: #334155;
+
+    transition: all .35s ease;
+
+    box-shadow:
+        0 6px 20px rgba(15,23,42,.05);
+}
+
+.timeline-card:hover{
+
+    transform: translateY(-4px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 14px 35px rgba(15,23,42,.12);
+}
+
+.timeline-card p{
+    margin: 0;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   SUB TITLE
+========================================== */
+
+.timeline-card h3{
+    margin: 0 0 15px;
+    color: #2563eb;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* ==========================================
+   NESTED LIST
+========================================== */
+
+.sub-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-list li{
+    position: relative;
+    padding-right: 22px;
+    margin: 10px 0;
+    color: #475569;
+    line-height: 1.9;
+}
+
+/* Diamond Bullet */
+
+.sub-list li::before{
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 12px;
+
+    width: 8px;
+    height: 8px;
+
+    background: #2563eb;
+
+    transform: rotate(45deg);
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.timeline-item{
+    transition: .3s ease;
+}
+
+.timeline-item:hover .timeline-dot{
+    transform: scale(1.15);
+}
+
+.timeline-item:hover .timeline-card{
+    border-color: #93c5fd;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px){
+
+    .policy-section{
+        padding: 60px 18px;
+    }
+
+    .policy-title{
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+
+    .timeline-item{
+        padding-right: 45px;
+    }
+
+    .timeline-card{
+        padding: 18px;
+    }
+
+    .timeline-dot{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px){
+
+    .policy-section{
+        padding: 45px 15px;
+    }
+
+    .policy-title{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item{
+        padding-right: 40px;
+    }
+
+    .timeline-card{
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    .timeline-card p{
+        font-size: .95rem;
+    }
+
+    .timeline-card h3{
+        font-size: 1rem;
+    }
+
+    .sub-list li{
+        font-size: .92rem;
+    }
+}
+/* //// */
